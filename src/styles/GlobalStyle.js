@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
     *{
         box-sizing: border-box;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Poppins';
     }
     
     a{
@@ -11,8 +11,19 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         cursor: pointer;
     }
+    p{
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding-bottom: 27px;
+        -webkit-font-smoothing: antialiased;
+    }
+    h3 {
+        line-height: 1.25 !important;
+    }
     ul, ol, li{
-        list-style: none;
+        margin-left: 30px;
     }
     header {
         display: block;

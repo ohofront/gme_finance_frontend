@@ -24,6 +24,7 @@ const AjaxContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow-x: hidden;
 `;
 const ContainerWrapper = styled.div`
   padding-bottom: 0px;

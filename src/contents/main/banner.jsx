@@ -2,18 +2,23 @@ import RowWrapper from "components/RowWrapper";
 import styled from "styled-components";
 import Video from "./video";
 import Youtube from "./youtube";
+import Divider from "./divider";
+import Introduce from "./introduce";
 
 const Banner = () => {
   return (
     <BannerWrapper>
       <RowWrapper />
       <VideoOverlay />
+      <VideoImage />
       <Video />
       <BannerDarkLeft>
         <BannerContainer>
           <BannerColumnInner>
             <BannerWbpWrapper>
               <Youtube />
+              <Divider />
+              <Introduce />
             </BannerWbpWrapper>
           </BannerColumnInner>
         </BannerContainer>
@@ -51,6 +56,18 @@ const VideoOverlay = styled.div`
   z-index: 3;
 `;
 
+const VideoImage = styled.div`
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: none;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
 const BannerDarkLeft = styled.div`
   min-height: 100vh;
   display: flex;

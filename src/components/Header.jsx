@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const isScroll = scrollPosition >= 100;
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
@@ -14,13 +15,14 @@ const Header = () => {
   });
   useEffect(() => {
     console.log("scrollPosition:", scrollPosition);
+    console.log("isScroll:", isScroll);
   }, [scrollPosition]);
   return (
-    <HeaderOuter scroll={scrollPosition}>
+    <HeaderOuter isScroll={isScroll}>
       <HeaderTop>
         <HedaerContainer>
           <HeaderRow>
-            <Logo />
+            <Logo isScroll={isScroll} />
             <ToBottomMenu />
             <Navigation />
           </HeaderRow>
@@ -38,7 +40,11 @@ const HeaderOuter = styled.div`
   z-index: 9999;
   overflow: visible;
   box-shadow: ${(props) =>
-    props.scrollPosition < 100 ? "0 4px 4px -4px black" : ""};
+    props.isScroll ? "0 3px 45px rgba(0,0,0,0.15)" : ""};
+  background-color: ${(props) => (props.isScroll ? "white" : "")};
+  transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
+    opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
+    margin 0.25s ease-out 0s;
 `;
 const HeaderTop = styled.header`
   position: relative;

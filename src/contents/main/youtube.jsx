@@ -1,5 +1,6 @@
 import RowBgWrapper from "components/RowBgWrapper";
 import styled from "styled-components";
+import Divider from "./divider";
 
 const Youtube = () => {
   return (
@@ -20,6 +21,7 @@ const Youtube = () => {
                   </VideoWpbWrapper>
                 </WpbWrapper>
               </YoutubeContentWrapper>
+              <Divider />
             </YoutubeWbpWrapper>
           </YoutubeColumnInner>
         </YoutubeContainer>
@@ -56,6 +58,13 @@ const YoutubeDarkLeft = styled.div`
   margin-right: -1%;
   width: auto;
   position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
 `;
 const YoutubeContainer = styled.div`
   display: block;
@@ -67,6 +76,13 @@ const YoutubeContainer = styled.div`
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
   @media screen and (min-width: 690px) {
     width: 100%;
   }
@@ -77,9 +93,7 @@ const YoutubeColumnInner = styled.div`
   padding-left: 0;
   width: 100%;
   position: relative;
-  @media screen and (min-width: 1425px) {
-    padding: calc(1245px * 0.1);
-  }
+
 }
 `;
 const YoutubeWbpWrapper = styled.div``;
@@ -92,6 +106,11 @@ const YoutubeContentWrapper = styled.div`
     color: #191c1f;
     visibility: visible;
   }
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 `;
 const WpbWrapper = styled.div`
   float: left;
@@ -99,7 +118,7 @@ const WpbWrapper = styled.div`
   position: relative;
 `;
 const VideoWpbWrapper = styled.div`
-  padding-top: 56.25%;
+  padding-top: 10.25%;
   margin-bottom: 0;
   position: relative;
   width: 100%;

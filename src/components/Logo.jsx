@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import bigLogo from "assets/images/Logo/bigLogo.png";
 
-const Logo = () => {
+const Logo = (props) => {
+  console.log("props", props);
   return (
     <LogoWrapper>
-      <LogoContent>
+      <LogoContent isScroll={props.isScroll}>
         <img className="logo" width={180} height={50} src={bigLogo} />
       </LogoContent>
     </LogoWrapper>
@@ -32,8 +33,9 @@ const LogoContent = styled.a`
   font-weight: 600;
   align-self: center;
   @media screen and (min-width: 1000px) {
-    margin-top: 28px;
-    margin-bottom: 28px;
+    transition: margin 0.32s ease;
+    margin-top: ${(props) => (props.isScroll ? "15px" : "28px")};
+    margin-bottom: ${(props) => (props.isScroll ? "15px" : "28px")};
     position: relative;
   }
 `;

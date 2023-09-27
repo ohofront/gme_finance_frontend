@@ -13,7 +13,6 @@ const Video = () => {
             opacity: 1,
           }}
           preload="auto"
-          loop={true}
           autoPlay
           muted
           playsInline
@@ -25,19 +24,6 @@ const Video = () => {
   );
 };
 export default Video;
-
-const VideoImage = styled.div`
-  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
-  left: 50%;
-  width: calc(100vw - var(--scroll-bar-w));
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  display: none;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-`;
 
 const VideoLoaded = styled.div`
   opacity: 1;
