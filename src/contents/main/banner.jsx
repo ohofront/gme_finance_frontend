@@ -4,6 +4,8 @@ import Video from "./video";
 import Youtube from "./youtube";
 import Divider from "./divider";
 import Introduce from "./introduce";
+import QuickHeader from "./quickHeader";
+import QuickContent from "./quickContent";
 
 const Banner = () => {
   return (
@@ -19,6 +21,8 @@ const Banner = () => {
               <Youtube />
               <Divider />
               <Introduce />
+              <QuickHeader />
+              <QuickContent />
             </BannerWbpWrapper>
           </BannerColumnInner>
         </BannerContainer>

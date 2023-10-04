@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     h3 {
         line-height: 1.25 !important;
     }
-    ul, ol, li{
+    ul, ol{
         margin-left: 30px;
     }
     header {
