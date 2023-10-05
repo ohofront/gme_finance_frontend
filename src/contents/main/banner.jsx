@@ -48,6 +48,8 @@ const BannerWrapper = styled.div`
 `;
 
 const VideoOverlay = styled.div`
+  --scroll-bar-w: 13px;
+  border-radius: 20px;
   opacity: 0.7;
   margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
   left: 50%;

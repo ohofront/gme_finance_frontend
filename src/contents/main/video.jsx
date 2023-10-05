@@ -1,7 +1,19 @@
 import styled from "styled-components";
 import Intro from "assets/videos/intro.mp4";
+import { useState } from "react";
 
 const Video = () => {
+  const [isShow, setIsShow] = useState(false);
+  const [fadeIn, setFadeIn] = useState("");
+  const handleVideoEnd = () => {
+    if (isShow === false) {
+      setFadeIn("fade-In");
+      setTimeout(() => {
+        setIsShow(!isShow);
+      }, 1000);
+    }
+    setIsShow(true);
+  };
   return (
     <VideoLoaded>
       <VideoInner>
@@ -12,6 +24,7 @@ const Video = () => {
             visibility: "visible",
             opacity: 1,
           }}
+          onEnded={handleVideoEnd}
           preload="auto"
           autoPlay
           muted

@@ -26,7 +26,7 @@ const Introduce = () => {
                   <iframe
                     id="1695796472296_180364552799780"
                     src="https://form.123formbuilder.com/js-form-username-6258808.html?ref=https%3A%2F%2Fgmefinance.com%2F&amp;_referrer_=&amp;_embedType_=embed.js&amp;_iframeID_=1695796472296_180364552799780"
-                    frameborder="0"
+                    frameBorder="0"
                     scrolling="no"
                     style={{
                       padding: 0,

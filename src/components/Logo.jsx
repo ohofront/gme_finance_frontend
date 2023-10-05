@@ -38,4 +38,7 @@ const LogoContent = styled.a`
     margin-bottom: ${(props) => (props.isScroll ? "15px" : "28px")};
     position: relative;
   }
+  .logo {
+    position: relative;
+  }
 `;

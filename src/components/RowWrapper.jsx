@@ -12,6 +12,7 @@ const RowWrapper = () => {
 export default RowWrapper;
 
 const Wrapper = styled.div`
+  --scroll-bar-w: 13px;
   margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
   left: 50%;
   width: calc(100vw - var(--scroll-bar-w));

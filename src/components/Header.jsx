@@ -57,6 +57,10 @@ const HedaerContainer = styled.div`
   @media screen and (min-width: 1300px) {
     max-width: 1100px;
   }
+  &::before {
+    content: " ";
+    display: table;
+  }
 `;
 const HeaderRow = styled.div`
   position: relative;

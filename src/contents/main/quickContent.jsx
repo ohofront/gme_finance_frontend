@@ -10,7 +10,7 @@ const QuickContent = () => {
       <QuickContentDarkLeft>
         {step.map((item, index) => {
           return (
-            <QuickContentCotainer>
+            <QuickContentCotainer key={index}>
               <QuickContentColumnInner>
                 <QuickContentWpbWrapper>
                   <QuickContentUsingImage>
