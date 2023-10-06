@@ -1,7 +1,6 @@
 import RowBgWrapper from "components/RowBgWrapper";
 import styled from "styled-components";
 import step from "utils/Home/step";
-import Divider from "./divider";
 
 const QuickContent = () => {
   return (
@@ -16,7 +15,11 @@ const QuickContent = () => {
                   <QuickContentUsingImage>
                     <QuickContentLoaded image={item.src} />
                     <QuickContentInner>
-                      <h4>
+                      <h4
+                        style={{
+                          textAlign: "center",
+                        }}
+                      >
                         <div>
                           <div style={{ height: 225 }}></div>
                         </div>
@@ -93,6 +96,13 @@ const QuickContentCotainer = styled.div`
   @media screen and (min-width: 690px) {
     width: 25%;
   }
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
 `;
 const QuickContentColumnInner = styled.div`
   justify-content: center;
@@ -134,7 +144,7 @@ const QuickContentLoaded = styled.div`
     width: 100%;
     height: 100%;
     background-color: #fff;
-    opacity: 0;
+    opacity: 0.13;
     z-index: 1;
     transition: opacity 0.4s cubic-bezier(0.25, 1, 0.33, 1);
   }

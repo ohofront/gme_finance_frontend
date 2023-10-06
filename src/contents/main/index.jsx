@@ -1,10 +1,10 @@
-import Banner from "./banner";
-import Divider from "./divider";
+import styled from "styled-components";
+import Main1 from "./main1";
 
 const Main = () => {
   return (
     <>
-      <Banner />
+      <Main1 />
     </>
   );
 };

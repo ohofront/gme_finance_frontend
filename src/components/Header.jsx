@@ -54,12 +54,17 @@ const HeaderTop = styled.header`
 const HedaerContainer = styled.div`
   margin: 0px auto;
   position: relative;
-  @media screen and (min-width: 1300px) {
-    max-width: 1100px;
-  }
   &::before {
     content: " ";
     display: table;
+  }
+  &::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  @media screen and (min-width: 1300px) {
+    max-width: 1100px;
   }
 `;
 const HeaderRow = styled.div`

@@ -1,6 +1,6 @@
 import RowBgWrapper from "components/RowBgWrapper";
 import styled from "styled-components";
-import Divider from "./divider";
+import Divider from "components/Divider";
 
 const Youtube = () => {
   return (
@@ -21,7 +21,7 @@ const Youtube = () => {
                   </VideoWpbWrapper>
                 </WpbWrapper>
               </YoutubeContentWrapper>
-              <Divider />
+              <Divider height={30} />
             </YoutubeWbpWrapper>
           </YoutubeColumnInner>
         </YoutubeContainer>
@@ -93,8 +93,6 @@ const YoutubeColumnInner = styled.div`
   padding-left: 0;
   width: 100%;
   position: relative;
-
-}
 `;
 const YoutubeWbpWrapper = styled.div``;
 const YoutubeContentWrapper = styled.div`

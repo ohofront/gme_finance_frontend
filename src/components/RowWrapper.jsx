@@ -1,10 +1,16 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const RowWrapper = () => {
+const RowWrapper = (props) => {
+  const [iscolor, setColor] = useState(false);
+  useEffect(() => {
+    console.log("props:", props);
+    setColor(props);
+  }, [props]);
   return (
     <Wrapper>
       <InnerWrapper>
-        <Rowbg />
+        <Rowbg iscolor={iscolor} />
       </InnerWrapper>
     </Wrapper>
   );
@@ -38,4 +44,5 @@ const Rowbg = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-color: ${(props) => (props.iscolor ? "#f2f2f2" : "")};
 `;
