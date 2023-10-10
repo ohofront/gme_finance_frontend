@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import RowWrapper from "./RowWrapper";
+import Divider from "./Divider";
+import RowBgWrapper from "./RowBgWrapper";
+import FooterTab from "utils/Footer";
 
 const Footer = () => {
   return (
@@ -10,7 +13,29 @@ const Footer = () => {
           <FooterDarkLeft>
             <FooterContainer>
               <FooterColumnInner>
-                <FooterWpbWrapper></FooterWpbWrapper>
+                <FooterWpbWrapper>
+                  <Divider height={50} />
+                  <FooterContentRowInner>
+                    <RowBgWrapper />
+                    <FooterContentDarkLeft>
+                      {FooterTab.map((item, index) => {
+                        return (
+                          <FooterContentColumn key={index}>
+                            <FooterCotentColumnInner>
+                              <FooterContentWpbWrapper>
+                                <FooterContetElemtent>
+                                  <FooterContentWpbWrapper>
+                                    <h2>{item.name}</h2>
+                                  </FooterContentWpbWrapper>
+                                </FooterContetElemtent>
+                              </FooterContentWpbWrapper>
+                            </FooterCotentColumnInner>
+                          </FooterContentColumn>
+                        );
+                      })}
+                    </FooterContentDarkLeft>
+                  </FooterContentRowInner>
+                </FooterWpbWrapper>
               </FooterColumnInner>
             </FooterContainer>
           </FooterDarkLeft>
@@ -42,6 +67,7 @@ const FooterRow = styled.div`
   padding-bottom: 0px;
   margin-top: 0 !important;
   margin-bottom: 0;
+  position: relative;
   box-sizing: content-box;
   background-size: cover;
   width: 100%;
@@ -93,3 +119,38 @@ const FooterColumnInner = styled.div`
   position: relative;
 `;
 const FooterWpbWrapper = styled.div``;
+const FooterContentRowInner = styled.div`
+  margin-bottom: 24px;
+  position: relative;
+`;
+const FooterContentDarkLeft = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  margin-left: -1%;
+  margin-right: -1%;
+  width: auto;
+  position: relative;
+`;
+const FooterContentColumn = styled.div`
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+  @media screen and (min-width: 690px) {
+    width: 25%;
+  }
+`;
+const FooterCotentColumnInner = styled.div`
+  position: relative;
+`;
+const FooterContentWpbWrapper = styled.div``;
+const FooterContetElemtent = styled.div`
+  margin-bottom: 0;
+`;

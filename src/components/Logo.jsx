@@ -2,7 +2,6 @@ import styled from "styled-components";
 import bigLogo from "assets/images/Logo/bigLogo.png";
 
 const Logo = (props) => {
-  console.log("props", props);
   return (
     <LogoWrapper>
       <LogoContent isScroll={props.isScroll}>

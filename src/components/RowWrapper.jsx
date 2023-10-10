@@ -10,7 +10,11 @@ const RowWrapper = (props) => {
   return (
     <Wrapper>
       <InnerWrapper>
-        <Rowbg iscolor={iscolor} />
+        {props.backgroundImage ? (
+          <RowbgImage image={props.backgroundImage} />
+        ) : (
+          <Rowbg $iscolor={iscolor} />
+        )}
       </InnerWrapper>
     </Wrapper>
   );
@@ -36,6 +40,11 @@ const InnerWrapper = styled.div`
   z-index: 1;
   top: 0;
   left: 0;
+`;
+
+const RowbgImage = styled.div`
+  background-position: center center;
+  background-repeat: no-repeat;
 `;
 const Rowbg = styled.div`
   position: absolute;

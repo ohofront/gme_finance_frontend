@@ -1,4 +1,4 @@
-const menuTab = [
+const HeadermenuTab = [
   { id: 1, name: "Home" },
   {
     id: 2,
@@ -10,4 +10,4 @@ const menuTab = [
   { id: 5, name: "Countries" },
 ];
 
-export default menuTab;
+export default HeadermenuTab;

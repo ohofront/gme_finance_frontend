@@ -18,11 +18,11 @@ const Header = () => {
     console.log("isScroll:", isScroll);
   }, [scrollPosition]);
   return (
-    <HeaderOuter isScroll={isScroll}>
+    <HeaderOuter $isScroll={isScroll}>
       <HeaderTop>
         <HedaerContainer>
           <HeaderRow>
-            <Logo isScroll={isScroll} />
+            <Logo $isScroll={isScroll} />
             <ToBottomMenu />
             <Navigation />
           </HeaderRow>
