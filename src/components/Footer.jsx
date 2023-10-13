@@ -25,7 +25,35 @@ const Footer = () => {
                               <FooterContentWpbWrapper>
                                 <FooterContetElemtent>
                                   <FooterContentWpbWrapper>
-                                    <h2>{item.name}</h2>
+                                    <h2 style={{ lineHeight: 1.25 }}>
+                                      <a>{item.name}</a>
+                                    </h2>
+                                  </FooterContentWpbWrapper>
+                                </FooterContetElemtent>
+                                <FooterDividerWrapper>
+                                  <FooterDividerContent />
+                                </FooterDividerWrapper>
+                                <FooterContetElemtent>
+                                  <FooterContentWpbWrapper>
+                                    <ul
+                                      style={{
+                                        marginBottom: 30,
+                                        listStyle: "none",
+                                      }}
+                                    >
+                                      {item.subTab.map((item) => {
+                                        return (
+                                          <li
+                                            style={{
+                                              listStyle: "disc",
+                                              listStylePosition: "outside",
+                                            }}
+                                          >
+                                            <a>{item}</a>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
                                   </FooterContentWpbWrapper>
                                 </FooterContetElemtent>
                               </FooterContentWpbWrapper>
@@ -122,6 +150,10 @@ const FooterWpbWrapper = styled.div``;
 const FooterContentRowInner = styled.div`
   margin-bottom: 24px;
   position: relative;
+  &::before {
+    content: " ";
+    display: table;
+  }
 `;
 const FooterContentDarkLeft = styled.div`
   display: flex;
@@ -153,4 +185,14 @@ const FooterCotentColumnInner = styled.div`
 const FooterContentWpbWrapper = styled.div``;
 const FooterContetElemtent = styled.div`
   margin-bottom: 0;
+`;
+const FooterDividerWrapper = styled.div`
+  margin-bottom: 0;
+`;
+const FooterDividerContent = styled.div`
+  margin-top: 5px;
+  height: 1px;
+  margin-bottom: 5px;
+  margin: 35px px auto 35px auto;
+  background-color: rgba(0, 0, 0, 0.12);
 `;

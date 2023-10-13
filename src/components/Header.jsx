@@ -18,7 +18,7 @@ const Header = () => {
     console.log("isScroll:", isScroll);
   }, [scrollPosition]);
   return (
-    <HeaderOuter $isScroll={isScroll}>
+    <HeaderOuter isscroll={isScroll}>
       <HeaderTop>
         <HedaerContainer>
           <HeaderRow>
@@ -41,7 +41,7 @@ const HeaderOuter = styled.div`
   overflow: visible;
   box-shadow: ${(props) =>
     props.isScroll ? "0 3px 45px rgba(0,0,0,0.15)" : ""};
-  background-color: ${(props) => (props.isScroll ? "white" : "")};
+  background-color: ${(props) => (props.isscroll ? "white" : "")};
   transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
     opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
     margin 0.25s ease-out 0s;
