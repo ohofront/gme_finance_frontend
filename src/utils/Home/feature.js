@@ -8,6 +8,7 @@ const feature = [
       "With its online application, no need to go to GME FINANCE Branches. Everything is paperless from application to Contract Signing.",
     src: feature1,
     color: "#a7aff9",
+    width: 50,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const feature = [
       "We understand your needs, so our terms of Payment are always flexible with Competitive Interest Rates.",
     src: feature2,
     color: "#ffd059",
+    width: 75,
   },
 ];
 export default feature;

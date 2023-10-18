@@ -1,7 +1,19 @@
 import styled from "styled-components";
 import menuTab from "utils/Header";
+import DropdownMenu from "./DropdownMenu";
+import { useEffect, useState } from "react";
 
 const Navigation = () => {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const handleMouseEnter = (number) => {
+    if (number === 2) setDropdownVisible(true);
+  };
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+  useEffect(() => {
+    console.log("isDropdownVisible: ", isDropdownVisible);
+  }, [isDropdownVisible]);
   return (
     <NavigationWrapper>
       <NavWrapper>
@@ -10,8 +22,16 @@ const Navigation = () => {
             return (
               <LiWrapper key={index}>
                 <AWrapper>
-                  <SpanWrapper>{item.name}</SpanWrapper>
+                  <SpanWrapper
+                    onMouseEnter={() => handleMouseEnter(item.id)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {item.name}
+                  </SpanWrapper>
                 </AWrapper>
+                {isDropdownVisible ? (
+                  <DropdownMenu subTab={item.subTab} />
+                ) : null}
               </LiWrapper>
             );
           })}

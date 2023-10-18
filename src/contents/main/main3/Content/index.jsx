@@ -1,4 +1,6 @@
+import Divider from "components/Divider";
 import RowBgWrapper from "components/RowBgWrapper";
+import RowBgWrapper2 from "components/RowBgWrapper2";
 import RowWrapper from "components/RowWrapper";
 import styled from "styled-components";
 import feature from "utils/Home/feature";
@@ -6,11 +8,11 @@ import feature from "utils/Home/feature";
 const FeatureContent = () => {
   return (
     <FeatureContentWrapper>
-      <RowWrapper />
+      <RowBgWrapper2 />
       <FeatureContentDarkLeft>
         {feature.map((item, index) => {
           return (
-            <FeatureContentContainer>
+            <FeatureContentContainer key={index}>
               <FeatureContentColumnInner>
                 <FeatureContentWpbWrapper>
                   <FeatureContentRowInner>
@@ -28,11 +30,13 @@ const FeatureContent = () => {
                           </ContentBgWrapper>
                           <ContentWbpWrapper>
                             <ContentImgWrapper>
-                              <ContentImgInner>
+                              <ContentImgInner maxWidth={item.width}>
                                 <ContentImgHoverWrapper>
                                   <ContentImgHoverLodaded>
                                     <img
+                                      src={item.src}
                                       style={{
+                                        opacity: 1,
                                         display: "block",
                                         minHeight: 1,
                                         minWidth: 1,
@@ -40,12 +44,35 @@ const FeatureContent = () => {
                                         maxWidth: "100%",
                                         height: "auto",
                                         position: "relative",
+                                        transition: "opacity 0.5s ease",
+                                        transform: "none",
+                                        paddingRight: 0,
+                                        paddingLeft: 0,
+                                        paddingBottom: 0,
+                                        marginBottom: 0,
                                       }}
                                     />
                                   </ContentImgHoverLodaded>
                                 </ContentImgHoverWrapper>
                               </ContentImgInner>
                             </ContentImgWrapper>
+                            <Divider height={25} />
+                            <h4
+                              style={{
+                                textAlign: "left",
+                                fontFamily: "Poppins",
+                                fontSize: 25,
+                                fontWeight: 600,
+                                marginBottom: 8,
+                              }}
+                            >
+                              {item.title}
+                            </h4>
+                            <ContentWpbElement>
+                              <ContentWbpWrapper>
+                                <p>{item.content}</p>
+                              </ContentWbpWrapper>
+                            </ContentWpbElement>
                           </ContentWbpWrapper>
                         </ContentColumnInner>
                       </FeatureContentColumnContainer>
@@ -106,6 +133,7 @@ const FeatureContentRowInner = styled.div`
 `;
 const FeatureContentColumnContainer = styled.div`
   float: none;
+  position: relative;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
@@ -191,7 +219,7 @@ const ContentImgWrapper = styled.div`
 `;
 const ContentImgInner = styled.div`
   display: inline-block;
-  max-width: 50%;
+  max-width: ${(props) => props.maxWidth}%;
   width: auto;
   height: 100%;
 `;
@@ -201,4 +229,12 @@ const ContentImgHoverWrapper = styled.div`
   overflow: hidden;
   position: relative;
 `;
-const ContentImgHoverLodaded = styled.div``;
+const ContentImgHoverLodaded = styled.div`
+  text-align: center;
+`;
+
+const ContentWpbElement = styled.div`
+  max-width: 300px;
+  display: inline-block;
+  margin-bottom: 0;
+`;
