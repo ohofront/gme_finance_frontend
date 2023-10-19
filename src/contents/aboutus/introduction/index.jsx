@@ -1,5 +1,11 @@
+import Banner from "./banner";
+
 const Introduction = () => {
-  return <div>회사소개</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 };
 
 export default Introduction;

@@ -31,7 +31,7 @@ const AjaxContentWrapper = styled.div`
 const ContainerWrapper = styled.div`
   padding-bottom: 0px;
   margin-top: 0 !important;
-  padding-top: 0px;
+  padding-top: 0;
   flex-grow: 1;
   background-color: #fafbfc;
   position: relative;

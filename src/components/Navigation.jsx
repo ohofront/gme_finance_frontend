@@ -2,14 +2,21 @@ import styled from "styled-components";
 import menuTab from "utils/Header";
 import DropdownMenu from "./DropdownMenu";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const navigate = useNavigate();
+
   const handleMouseEnter = (number) => {
     if (number === 2) setDropdownVisible(true);
   };
   const handleMouseLeave = () => {
     setDropdownVisible(false);
+  };
+  const goPage = (href) => {
+    console.log("이동");
+    navigate(href);
   };
   useEffect(() => {
     console.log("isDropdownVisible: ", isDropdownVisible);
@@ -20,14 +27,13 @@ const Navigation = () => {
         <UlWrapper>
           {menuTab.map((item, index) => {
             return (
-              <LiWrapper key={index}>
-                <AWrapper>
-                  <SpanWrapper
-                    onMouseEnter={() => handleMouseEnter(item.id)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    {item.name}
-                  </SpanWrapper>
+              <LiWrapper
+                key={index}
+                onMouseEnter={() => handleMouseEnter(item.id)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <AWrapper onClick={() => goPage(item.href)}>
+                  <SpanWrapper>{item.name}</SpanWrapper>
                 </AWrapper>
                 {isDropdownVisible ? (
                   <DropdownMenu subTab={item.subTab} />

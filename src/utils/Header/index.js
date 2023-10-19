@@ -1,9 +1,30 @@
 const HeadermenuTab = [
-  { id: 1, name: "Home", subTab: null },
+  { id: 1, name: "Home", subTab: null, href: "/" },
   {
     id: 2,
     name: "About Us",
-    subTab: ["Introduction", "Why choose us", "Blog", "Contact Us"],
+    subTab: [
+      {
+        id: 1,
+        name: "Introduction",
+        href: "/about-us/introduction",
+      },
+      {
+        id: 2,
+        name: "Why choose us",
+        href: "/about-us/whyChooseUs",
+      },
+      {
+        id: 3,
+        name: "Blog",
+        href: "/blog",
+      },
+      {
+        id: 4,
+        name: "Contact Us",
+        href: "/about-us/contactUs",
+      },
+    ],
   },
   { id: 3, name: "Products", subTab: null },
   { id: 4, name: "Careers", subTab: null },

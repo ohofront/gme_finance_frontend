@@ -22,7 +22,7 @@ const Header = () => {
       <HeaderTop>
         <HedaerContainer>
           <HeaderRow>
-            <Logo $isScroll={isScroll} />
+            <Logo isScroll={isScroll} />
             <ToBottomMenu />
             <Navigation />
           </HeaderRow>

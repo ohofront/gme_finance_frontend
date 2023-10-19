@@ -1,22 +1,28 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const DropdownMenu = (props) => {
   const [subMenu, setSubMenu] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     console.log("menu:", props);
     if (props.subTab !== null) {
       setSubMenu(props.subTab);
     }
   }, [props.subTab]);
+  const goPage = (href) => {
+    console.log("이동");
+    navigate(href);
+  };
   return (
     <UlWrapper>
       {subMenu.map((item, index) => {
         console.log(item);
         return (
           <LiWrapper key={index}>
-            <AWrapper>
-              <SpanWrapper>{item}</SpanWrapper>
+            <AWrapper onClick={() => goPage(item.href)}>
+              <SpanWrapper>{item.name}</SpanWrapper>
             </AWrapper>
           </LiWrapper>
         );
@@ -28,28 +34,34 @@ export default DropdownMenu;
 
 const UlWrapper = styled.ul`
   border-radius: 20px;
+  padding: 0px;
+  display: block;
   background-color: #fff;
-  padding: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
   width: 20em;
   opacity: 1;
-  pointer-events: none;
-  display: block;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;
   top: 100%;
   left: 0;
   list-style: none outside none;
   margin: 0;
-  z-index: 999;
+  z-index: 10;
 `;
 const LiWrapper = styled.li`
-  line-height: 12px;
+  display: block;
+  flex: none;
+  padding: 5px;
+  line-height: 5px;
   position: relative;
-  transform: translate3d(0, 13px, 0);
-  float: right;
+  transform: translate3d(0, 5px, 0);
+  float: none;
   list-style: none;
   font-size: 12px;
   width: 100%;
+  cursor: pointer;
 `;
 const AWrapper = styled.a`
   position: relative;
