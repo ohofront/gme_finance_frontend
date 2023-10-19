@@ -28,6 +28,7 @@ const Banner = () => {
                       textAlign: "center",
                       marginBottom: 7,
                       lineHeight: 1.25,
+                      fontSize: 36,
                     }}
                   >
                     About GME Finance
@@ -43,8 +44,8 @@ const Banner = () => {
 };
 export default Banner;
 const IntroductionBannerWrapper = styled.div`
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 200px;
   z-index: 100;
   position: relative;
   margin-top: 100px;
