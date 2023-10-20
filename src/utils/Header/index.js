@@ -22,7 +22,7 @@ const HeadermenuTab = [
       {
         id: 4,
         name: "Contact Us",
-        href: "/about-us/contactUs",
+        href: "/contact-us",
       },
     ],
   },

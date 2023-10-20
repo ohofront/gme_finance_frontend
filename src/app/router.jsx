@@ -1,5 +1,7 @@
 import Loader from "components/Loader";
 import Introduction from "contents/aboutus/introduction";
+import Why from "contents/aboutus/introduction/why";
+import ContactUs from "contents/contact";
 import MainLayout from "layout/MainLayout";
 import { lazy } from "react";
 import { Navigate, useRoutes } from "react-router-dom";
@@ -33,9 +35,28 @@ const Router = () => {
         path: "introduction",
         element: <Introduction />,
       },
+      {
+        path: "why",
+        element: <Why />,
+      },
     ],
   };
-  const routes = [rootRoutes, noMatchRoutes, mainRoutes, aboutusRoutes];
+  const contactusRoutes = {
+    path: "/contact-us",
+    element: <MainLayout />,
+    children: [
+      {
+        element: <ContactUs />,
+      },
+    ],
+  };
+  const routes = [
+    rootRoutes,
+    noMatchRoutes,
+    mainRoutes,
+    aboutusRoutes,
+    contactusRoutes,
+  ];
   return useRoutes(routes);
 };
 export default Router;
