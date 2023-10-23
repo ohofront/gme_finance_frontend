@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const DropdownMenu = (props) => {
@@ -13,6 +14,7 @@ const DropdownMenu = (props) => {
   }, [props.subTab]);
   const goPage = (href) => {
     console.log("이동");
+    console.log(href);
     navigate(href);
   };
   return (
@@ -21,9 +23,28 @@ const DropdownMenu = (props) => {
         console.log(item);
         return (
           <LiWrapper key={index}>
-            <AWrapper onClick={() => goPage(item.href)}>
-              <SpanWrapper>{item.name}</SpanWrapper>
-            </AWrapper>
+            {item.href.includes("/") !== true ? (
+              <Link
+                to="Why"
+                spy={true}
+                smooth={true}
+                style={{
+                  position: "relative",
+                  fontFamily: "Poppins",
+                  fontSize: 16,
+                  lineHeight: "28px",
+                  fontWeight: 400,
+                  color: "#999",
+                  padding: "6px 6px",
+                }}
+              >
+                <SpanWrapper>{item.name}</SpanWrapper>
+              </Link>
+            ) : (
+              <AWrapper onClick={() => goPage(item.href)}>
+                <SpanWrapper>{item.name}</SpanWrapper>
+              </AWrapper>
+            )}
           </LiWrapper>
         );
       })}

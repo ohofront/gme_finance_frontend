@@ -4,7 +4,7 @@ import why from "utils/AboutUs/why";
 
 const Why = () => {
   return (
-    <WhyWrapper>
+    <WhyWrapper id="Why">
       <RowBgWrapper2 />
       <WhyDarkLeft>
         <WhyContainer>

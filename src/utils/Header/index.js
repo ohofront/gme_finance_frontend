@@ -12,7 +12,7 @@ const HeadermenuTab = [
       {
         id: 2,
         name: "Why choose us",
-        href: "/about-us/whyChooseUs",
+        href: "Why",
       },
       {
         id: 3,

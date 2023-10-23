@@ -1,7 +1,6 @@
 import Divider from "components/Divider";
 import RowBgWrapper from "components/RowBgWrapper";
 import RowBgWrapper2 from "components/RowBgWrapper2";
-import RowWrapper from "components/RowWrapper";
 import styled from "styled-components";
 import feature from "utils/Home/feature";
 

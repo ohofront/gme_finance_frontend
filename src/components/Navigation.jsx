@@ -16,6 +16,7 @@ const Navigation = () => {
   };
   const goPage = (href) => {
     console.log("이동");
+    console.log(href);
     navigate(href);
   };
   useEffect(() => {

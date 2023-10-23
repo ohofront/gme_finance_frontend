@@ -1,4 +1,12 @@
+import HelpContent from "./content";
+import HelpTile from "./title";
+
 const ContactUs = () => {
-  return <div>ContactUs</div>;
+  return (
+    <>
+      <HelpTile />
+      <HelpContent />
+    </>
+  );
 };
 export default ContactUs;

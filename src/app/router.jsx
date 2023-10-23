@@ -46,6 +46,7 @@ const Router = () => {
     element: <MainLayout />,
     children: [
       {
+        path: "",
         element: <ContactUs />,
       },
     ],
