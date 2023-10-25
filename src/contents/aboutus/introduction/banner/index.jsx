@@ -5,7 +5,7 @@ import Divider from "components/Divider";
 const Banner = () => {
   return (
     <IntroductionBannerWrapper>
-      <RowBgWrapper3 backgoundImage={banner} />
+      <RowBgWrapper3 backgroundImage={banner} />
       <IntroductionDarkLeft>
         <IntroductionContainer>
           <IntroductionColumnInner>
@@ -48,7 +48,7 @@ const IntroductionBannerWrapper = styled.div`
   padding-bottom: 200px;
   z-index: 100;
   position: relative;
-  margin-top: 100px;
+  margin-top: 110px;
   visibility: visible;
   box-sizing: content-box;
   background-size: cover;

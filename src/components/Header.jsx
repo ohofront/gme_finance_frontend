@@ -40,7 +40,7 @@ const HeaderOuter = styled.div`
   z-index: 9999;
   overflow: visible;
   box-shadow: ${(props) =>
-    props.isScroll ? "0 3px 45px rgba(0,0,0,0.15)" : ""};
+    props.isscroll ? "0 3px 45px rgba(0,0,0,0.15)" : ""};
   background-color: ${(props) => (props.isscroll ? "white" : "")};
   transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
     opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,

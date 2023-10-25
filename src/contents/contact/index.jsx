@@ -1,11 +1,13 @@
-import HelpContent from "./content";
+import AfricaContactUs from "./africa";
+import AisaContactUs from "./asia";
 import HelpTile from "./title";
 
 const ContactUs = () => {
   return (
     <>
       <HelpTile />
-      <HelpContent />
+      <AisaContactUs />
+      <AfricaContactUs />
     </>
   );
 };

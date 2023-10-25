@@ -5,7 +5,7 @@ const RowBgWrapper3 = (props) => {
   const [background, setBackground] = useState("");
   useEffect(() => {
     console.log("props:", props);
-    setBackground(props.backgoundImage);
+    setBackground(props.backgroundImage);
   }, [props]);
   useEffect(() => {
     console.log("background: ", background);

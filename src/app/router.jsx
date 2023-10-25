@@ -2,6 +2,7 @@ import Loader from "components/Loader";
 import Introduction from "contents/aboutus/introduction";
 import Why from "contents/aboutus/introduction/why";
 import ContactUs from "contents/contact";
+import Products from "contents/products";
 import MainLayout from "layout/MainLayout";
 import { lazy } from "react";
 import { Navigate, useRoutes } from "react-router-dom";
@@ -51,12 +52,23 @@ const Router = () => {
       },
     ],
   };
+  const productRoutes = {
+    path: "/products",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "",
+        element: <Products />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
     mainRoutes,
     aboutusRoutes,
     contactusRoutes,
+    productRoutes,
   ];
   return useRoutes(routes);
 };

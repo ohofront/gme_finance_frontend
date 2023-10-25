@@ -195,7 +195,7 @@ const asia = [
       },
       {
         type: "instagram",
-        src: "https://www.tiktok.com/@gmefinancephilippines",
+        src: null,
       },
       {
         type: "tiktok",

@@ -61,7 +61,7 @@ const UlWrapper = styled.ul`
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 20em;
+  width: 15em;
   opacity: 1;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;
@@ -74,6 +74,7 @@ const UlWrapper = styled.ul`
 const LiWrapper = styled.li`
   display: block;
   flex: none;
+  margin: 10px;
   padding: 5px;
   line-height: 5px;
   position: relative;
@@ -87,8 +88,8 @@ const LiWrapper = styled.li`
 const AWrapper = styled.a`
   position: relative;
   font-family: Poppins;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 30px;
   font-weight: 400;
   color: #999;
   padding: 6px 6px;

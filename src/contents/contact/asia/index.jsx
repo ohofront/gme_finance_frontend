@@ -4,14 +4,14 @@ import RowBgWrapper2 from "components/RowBgWrapper2";
 import styled from "styled-components";
 import asia from "utils/AboutUs/asia";
 import tiktok from "assets/images/contact/sns/tiktok.png";
-const HelpContent = () => {
+const AisaContactUs = () => {
   return (
     <HelpContentWrapper>
       <RowBgWrapper2 />
       <HelpContentDarkLeft>
         {asia.map((item, index) => {
           return (
-            <HelpContentContainer>
+            <HelpContentContainer key={index}>
               <HelpContentColumnInner>
                 <HelpContentWpbWrapper>
                   <ContentFlagWrapper>
@@ -77,7 +77,7 @@ const HelpContent = () => {
                               <ContentSnsWpbWrapper>
                                 {item.type === "facebook" ? (
                                   <ContentSnsIconWrapper>
-                                    <ContentSnsIcon>
+                                    <FacebookIcon>
                                       <a
                                         href={item.src}
                                         style={{
@@ -95,7 +95,6 @@ const HelpContent = () => {
                                         className="fa fa-facebook"
                                         style={{
                                           fontSize: 24,
-                                          lineHeight: "36px",
                                           height: 36,
                                           width: 36,
                                           color: "#3b5998",
@@ -108,19 +107,19 @@ const HelpContent = () => {
                                           textAlign: "center",
                                         }}
                                       ></i>
-                                    </ContentSnsIcon>
+                                    </FacebookIcon>
                                   </ContentSnsIconWrapper>
                                 ) : item.type === "instagram" &&
                                   item.src !== null ? (
                                   <ContentSnsIconWrapper>
-                                    <ContentSnsIcon>
+                                    <InstagramIcon>
                                       <a
                                         href={item.src}
                                         style={{
                                           display: "block",
                                           width: "100%",
                                           height: "100%",
-                                          position: "block",
+                                          position: "absolute",
                                           left: 0,
                                           top: 0,
                                           zIndex: 1,
@@ -129,13 +128,12 @@ const HelpContent = () => {
                                       <i
                                         style={{
                                           fontSize: 50,
-                                          lineHeight: 50,
                                           height: 50,
                                           width: 50,
                                         }}
                                         class="fa fa-instagram"
                                       ></i>
-                                    </ContentSnsIcon>
+                                    </InstagramIcon>
                                   </ContentSnsIconWrapper>
                                 ) : item.type === "tiktok" ? (
                                   <ContentFlagImageWrapper>
@@ -193,7 +191,7 @@ const HelpContent = () => {
     </HelpContentWrapper>
   );
 };
-export default HelpContent;
+export default AisaContactUs;
 
 const HelpContentWrapper = styled.div`
   padding-top: 0px;
@@ -223,6 +221,7 @@ const HelpContentContainer = styled.div`
   box-shadow: none;
   background-position: center;
   position: relative;
+  margin-bottom: 30px;
   @media screen and (min-width: 690px) {
     width: 33.3%;
   }
@@ -234,7 +233,7 @@ const HelpContentColumnInner = styled.div`
   width: 100%;
   border-radius: 20px;
   padding: calc(1245px * 0.02);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: relative;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -346,13 +345,28 @@ const ContentSnsIconWrapper = styled.div`
   display: inline-block;
   position: relative;
 `;
-const ContentSnsIcon = styled.div`
+const InstagramIcon = styled.div`
+  padding: 12px;
+`;
+const FacebookIcon = styled.div`
   padding: 12px;
   text-align: center;
+  line-height: 0px;
   border-radius: 150px;
   position: relative;
   transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),
     border-color 0.45s cubic-bezier(0.25, 1, 0.33, 1);
   &::before {
+    background-color: #3b5998 !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 100px;
+    z-index: -1;
+    opacity: 0.11;
   }
 `;
