@@ -1,3 +1,4 @@
+import ApplyButton from "components/ApplyButton";
 import Divider from "components/Divider";
 import RowWrapper from "components/RowWrapper";
 import styled from "styled-components";
@@ -8,7 +9,7 @@ const ProductList = () => {
     <>
       {products.map((item, index) => {
         return item.location === "right" ? (
-          <ProductListWrapper>
+          <ProductListRightWrapper>
             <RowWrapper isColor={true} />
             <ProductListDarkLeft>
               <ProductImageContainer>
@@ -32,7 +33,7 @@ const ProductList = () => {
                                 minHeight: "1px",
                                 minWidth: "1px",
                                 maxWidth: "100%",
-                                height: "auto",
+                                height: "100%",
                               }}
                             />
                           </ProductImageLoaded>
@@ -51,42 +52,122 @@ const ProductList = () => {
                         <h3 style={{ marginBottom: 10 }}>{item.title}</h3>
                         {item.subItem.map((sub, index) => {
                           return (
-                            <p style={{ paddingBottom: 20 }}>
-                              <p>
-                                <strong>{sub.subtitle}</strong>
-                              </p>
-                              <br />
-                              <p>
-                                {sub.content1}
-                                <br />
-                                {sub.content2}
-                                <br />
-                                {sub.content3}
-                                <br />
-                                {sub.content4}
-                              </p>
-                            </p>
+                            <>
+                              {sub.subtitle !== "" ? (
+                                <p style={{ marginBottom: 30 }}>
+                                  <strong>{sub.subtitle}</strong>
+                                </p>
+                              ) : null}
+
+                              {sub.content1 == null ? null : (
+                                <p style={{ marginBottom: 10 }}>
+                                  {sub.content1}
+                                  <br />
+                                  {sub.content2}
+                                  <br />
+                                  {sub.content3}
+                                  <br />
+                                  {sub.content4}
+                                </p>
+                              )}
+                            </>
                           );
                         })}
                       </ProductContentWbpWrapper>
                     </ProductContentElement>
+                    <Divider height={40} />
+                    <ApplyButton />
                   </ProductContentWbpWrapper>
                 </ProductContentColumnInner>
               </ProductContentContainer>
             </ProductListDarkLeft>
-          </ProductListWrapper>
+          </ProductListRightWrapper>
         ) : (
-          <>1</>
+          <ProductListLeftWrapper>
+            <RowWrapper isColor={true} />
+            <ProductListDarkLeft>
+              <ProductContentContainer>
+                <ProductContentColumnInner>
+                  <ProductContentWbpWrapper>
+                    <Divider height={100} />
+                    <ProductContentElement>
+                      <ProductContentWbpWrapper>
+                        <h3 style={{ marginBottom: 10 }}>{item.title}</h3>
+                        {item.subItem.map((sub, index) => {
+                          return (
+                            <>
+                              {sub.subtitle !== "" ? (
+                                <p style={{ marginBottom: 30 }}>
+                                  <strong>{sub.subtitle}</strong>
+                                </p>
+                              ) : null}
+
+                              {sub.content1 == null ? null : (
+                                <p style={{ marginBottom: 10 }}>
+                                  {sub.content1}
+                                  <br />
+                                  {sub.content2}
+                                  <br />
+                                  {sub.content3}
+                                  <br />
+                                  {sub.content4}
+                                </p>
+                              )}
+                            </>
+                          );
+                        })}
+                      </ProductContentWbpWrapper>
+                    </ProductContentElement>
+                    <Divider height={40} />
+                    <ApplyButton />
+                  </ProductContentWbpWrapper>
+                </ProductContentColumnInner>
+              </ProductContentContainer>
+              <ProductImageContainer>
+                <ProductImageColumnInner>
+                  <ProductImageWbpWrapper>
+                    <Divider height={100} />
+                    <ProductImageWrapper>
+                      <ProductImageInner>
+                        <ProductImageHoverWrapper>
+                          <ProductImageLoaded>
+                            <img
+                              src={item.src}
+                              style={{
+                                opacity: 1,
+                                transform: "none",
+                                paddingRight: 0,
+                                paddingLeft: 0,
+                                paddingBottom: 0,
+                                marginBottom: 0,
+                                display: "block",
+                                minHeight: "1px",
+                                minWidth: "1px",
+                                maxWidth: "100%",
+                                height: "100%",
+                              }}
+                            />
+                          </ProductImageLoaded>
+                        </ProductImageHoverWrapper>
+                      </ProductImageInner>
+                    </ProductImageWrapper>
+                  </ProductImageWbpWrapper>
+                </ProductImageColumnInner>
+              </ProductImageContainer>
+            </ProductListDarkLeft>
+          </ProductListLeftWrapper>
         );
       })}
     </>
   );
 };
 export default ProductList;
-const ProductListWrapper = styled.div`
+const ProductListRightWrapper = styled.div`
   padding-top: 0px;
   padding-bottom: 0px;
   margin-bottom: 0;
+  background-size: cover;
+  width: 100%;
 `;
 const ProductListDarkLeft = styled.div`
   color: #191c1f;
@@ -155,4 +236,10 @@ const ProductContentColumnInner = styled.div`
 const ProductContentWbpWrapper = styled.div``;
 const ProductContentElement = styled.div`
   margin-bottom: 0px;
+`;
+const ProductListLeftWrapper = styled.div`
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 35px;
+  position: relative;
 `;

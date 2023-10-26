@@ -1,6 +1,7 @@
 import Loader from "components/Loader";
 import Introduction from "contents/aboutus/introduction";
 import Why from "contents/aboutus/introduction/why";
+import Careers from "contents/careers";
 import ContactUs from "contents/contact";
 import Products from "contents/products";
 import MainLayout from "layout/MainLayout";
@@ -62,6 +63,16 @@ const Router = () => {
       },
     ],
   };
+  const careersRoutes = {
+    path: "/careers",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "",
+        element: <Careers />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -69,6 +80,7 @@ const Router = () => {
     aboutusRoutes,
     contactusRoutes,
     productRoutes,
+    careersRoutes,
   ];
   return useRoutes(routes);
 };

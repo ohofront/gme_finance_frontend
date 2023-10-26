@@ -40,10 +40,10 @@ const products = [
       {
         id: 1,
         subtitle:
-          "GME Finance is ready to provide a loan up to 10mil KRW to F6 (migrant marriage visa holders) If you can submit following additional documents,",
-        content1: "1. Alien registration certificate ( 외국인 사실증명서)",
-        content2: "2. Family relationship certificate (가족 관계증명서)",
-        content3: "",
+          "GME Finance is ready to provide a loan up to 10mil KRW to F6 (migrant marriage visa holders) ",
+        content1: "If you can submit following additional documents,",
+        content2: "1. Alien registration certificate ( 외국인 사실증명서)",
+        content3: "2. Family relationship certificate (가족 관계증명서)",
         content4: "",
       },
     ],
@@ -76,8 +76,16 @@ const products = [
         subtitle: "",
         content1:
           "With the purpose of spreading the population inside Korea & open up new industrial complex in rural areas of the country, F2 – R is the latest visa type introduced by the Korean government.",
-        content2:
+        content2: "",
+        content3: "",
+        content4: "",
+      },
+      {
+        id: 2,
+        subtitle: "",
+        content1:
           "If you & your spouse are holding F2-R & F21 – R visa, this is a big opportunity to apply up to 20 mil as a family loan from GME Finance.",
+        content2: "",
         content3: "",
         content4: "",
       },
