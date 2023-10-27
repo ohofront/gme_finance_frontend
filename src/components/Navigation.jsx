@@ -15,13 +15,9 @@ const Navigation = () => {
     setDropdownVisible(false);
   };
   const goPage = (href) => {
-    console.log("이동");
-    console.log(href);
     navigate(href);
+    window.location.reload();
   };
-  useEffect(() => {
-    console.log("isDropdownVisible: ", isDropdownVisible);
-  }, [isDropdownVisible]);
   return (
     <NavigationWrapper>
       <NavWrapper>
@@ -151,4 +147,8 @@ const AWrapper = styled.a`
 `;
 const SpanWrapper = styled.span`
   color: #191c1f !important;
+  &:hover {
+    color: red !important;
+    border-bottom: solid 3px #ea2129;
+  }
 `;

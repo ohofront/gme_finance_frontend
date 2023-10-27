@@ -7,20 +7,17 @@ const DropdownMenu = (props) => {
   const [subMenu, setSubMenu] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    console.log("menu:", props);
     if (props.subTab !== null) {
       setSubMenu(props.subTab);
     }
   }, [props.subTab]);
   const goPage = (href) => {
-    console.log("이동");
-    console.log(href);
     navigate(href);
+    window.location.reload();
   };
   return (
     <UlWrapper>
       {subMenu.map((item, index) => {
-        console.log(item);
         return (
           <LiWrapper key={index}>
             {item.href.includes("/") !== true ? (
@@ -100,4 +97,8 @@ const SpanWrapper = styled.span`
   margin: 0;
   padding: 0;
   z-index: 10;
+  &:hover {
+    color: red !important;
+    border-bottom: solid 3px #ea2129;
+  }
 `;

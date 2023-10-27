@@ -5,7 +5,6 @@ const RowWrapper = (props) => {
   const [iscolor, setColor] = useState(false);
   const [background, setBackground] = useState("");
   useEffect(() => {
-    console.log("props:", props);
     setColor(props.isColor);
     setBackground(props.backgroundImage);
   }, [props]);

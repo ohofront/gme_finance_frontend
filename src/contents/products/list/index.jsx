@@ -9,7 +9,7 @@ const ProductList = () => {
     <>
       {products.map((item, index) => {
         return item.location === "right" ? (
-          <ProductListRightWrapper>
+          <ProductListRightWrapper key={index}>
             <RowWrapper isColor={true} />
             <ProductListDarkLeft>
               <ProductImageContainer>

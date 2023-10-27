@@ -131,7 +131,7 @@ const AisaContactUs = () => {
                                           height: 50,
                                           width: 50,
                                         }}
-                                        class="fa fa-instagram"
+                                        className="fa fa-instagram"
                                       ></i>
                                     </InstagramIcon>
                                   </ContentSnsIconWrapper>

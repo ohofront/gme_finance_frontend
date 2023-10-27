@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import bigLogo from "assets/images/Logo/bigLogo.png";
+import { useNavigate } from "react-router-dom";
 
 const Logo = (props) => {
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/main");
+    window.location.reload();
+  };
   return (
-    <LogoWrapper>
+    <LogoWrapper onClick={goHome}>
       <LogoContent isScroll={props.isScroll}>
         <img className="logo" width={180} height={50} src={bigLogo} />
       </LogoContent>

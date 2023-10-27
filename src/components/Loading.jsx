@@ -1,27 +1,27 @@
-import nProgress from "nprogress";
-import { useEffect } from "react";
-import styled from "styled-components";
-import RingLoader from "react-spinners/RingLoader";
+import React from "react";
+import CircleLoader from "react-spinners/FadeLoader";
 
 const Loading = () => {
-  useEffect(() => {
-    nProgress.start();
-    return () => {
-      nProgress.done();
-    };
-  }, []);
   return (
-    <LoadingContent>
-      <RingLoader color="#d63636" size={50} />
-    </LoadingContent>
+    <div className="contentWrap">
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <CircleLoader
+          color="#d63636"
+          height={15}
+          width={5}
+          radius={2}
+          margin={2}
+        />
+      </div>
+    </div>
   );
 };
 
 export default Loading;
-
-const LoadingContent = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;

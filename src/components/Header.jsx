@@ -13,10 +13,6 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
   });
-  useEffect(() => {
-    console.log("scrollPosition:", scrollPosition);
-    console.log("isScroll:", isScroll);
-  }, [scrollPosition]);
   return (
     <HeaderOuter isscroll={isScroll}>
       <HeaderTop>

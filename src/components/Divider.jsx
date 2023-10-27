@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Divider = (props) => {
   const [height, setHeight] = useState(0);
   useEffect(() => {
-    console.log("height:", props);
     setHeight(props);
   }, [props]);
   return (

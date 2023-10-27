@@ -19,7 +19,6 @@ const HelpTile = () => {
                     fontWeight: 700,
                     fontStyle: "normal",
                   }}
-                  class="vc_custom_heading"
                 >
                   Contact Us
                 </h2>

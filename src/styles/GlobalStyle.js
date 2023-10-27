@@ -37,10 +37,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         font-weight: 400;
     }
-    ol, ul{
-        list-style: none;
-    }
-    
+
     button {
         border: 0;
         background: transparent;

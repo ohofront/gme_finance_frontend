@@ -10,9 +10,8 @@ const PerksContent = () => {
         <RowBgWrapper />
         <PerksContentDarkLeft>
           {perks.map((item, index) => {
-            console.log(item.className);
             return (
-              <PerksContentContainer>
+              <PerksContentContainer key={index}>
                 <PerksContentColumnInner>
                   <BgOverlayWrapper />
                   <PerksContentWbpWrapper>

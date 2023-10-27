@@ -7,6 +7,16 @@ import Divider2 from "./Divider2";
 import logo from "assets/images/footer/footerLogo.png";
 
 const Footer = () => {
+  const splitArray = (arr, chunk) => {
+    const result = [];
+    while (arr.length > 0) {
+      let tempArray;
+      tempArray = arr.splice(0, chunk);
+      result.push(tempArray);
+    }
+    console.log("result:", result);
+    return result;
+  };
   return (
     <FooterSection>
       <FooterContainerRow>
@@ -37,26 +47,34 @@ const Footer = () => {
                                 </FooterDividerWrapper>
                                 <FooterContetElemtent>
                                   <FooterContentWpbWrapper>
-                                    <ul
-                                      style={{
-                                        marginBottom: 30,
-                                        listStyle: "none",
-                                      }}
-                                    >
-                                      {item.subTab.map((item, index) => {
+                                    {splitArray(item.subTab, 7).map(
+                                      (sub, index) => {
                                         return (
-                                          <li
-                                            key={index}
+                                          <ul
                                             style={{
-                                              listStyle: "disc",
-                                              listStylePosition: "outside",
+                                              marginBottom: 30,
+                                              listStyle: "none",
                                             }}
                                           >
-                                            <a>{item}</a>
-                                          </li>
+                                            {sub.map((subitem, index) => {
+                                              console.log("subitem:", subitem);
+                                              return (
+                                                <li
+                                                  key={index}
+                                                  style={{
+                                                    listStyle: "disc",
+                                                    listStylePosition:
+                                                      "outside",
+                                                  }}
+                                                >
+                                                  <a>{subitem}</a>
+                                                </li>
+                                              );
+                                            })}
+                                          </ul>
                                         );
-                                      })}
-                                    </ul>
+                                      }
+                                    )}
                                   </FooterContentWpbWrapper>
                                 </FooterContetElemtent>
                               </FooterContentWpbWrapper>
@@ -162,7 +180,7 @@ const Footer = () => {
                                     verticalAlign: "middle",
                                     maxWidth: "100%",
                                   }}
-                                  class="fa fa-sign-in"
+                                  className="fa fa-sign-in"
                                 ></i>
                               </FooterNectarIcon>
                             </FooterContentIconWrapper>
