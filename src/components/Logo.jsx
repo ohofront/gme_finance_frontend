@@ -11,7 +11,13 @@ const Logo = (props) => {
   return (
     <LogoWrapper onClick={goHome}>
       <LogoContent isScroll={props.isScroll}>
-        <img className="logo" width={180} height={50} src={bigLogo} />
+        <img
+          className="logo"
+          width={180}
+          height={50}
+          src={bigLogo}
+          alt="logoImage"
+        />
       </LogoContent>
     </LogoWrapper>
   );

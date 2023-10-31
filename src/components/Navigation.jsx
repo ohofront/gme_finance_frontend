@@ -38,49 +38,6 @@ const Navigation = () => {
               </LiWrapper>
             );
           })}
-
-          {/* <li
-            id="menu-item-10242"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nectar-regular-menu-item menu-item-10242"
-          >
-            <a href="https://gmefinance.com/about-us/">
-              <span className="menu-title-text">About Us</span>
-            </a>
-            <ul className="sub-menu">
-              <li
-                id="menu-item-10330"
-                className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-10330"
-              >
-                <a href="https://www.gmefinance.com/about-us/#introduction">
-                  <span className="menu-title-text">Introduction</span>
-                </a>
-              </li>
-              <li
-                id="menu-item-10331"
-                className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-10331"
-              >
-                <a href="https://www.gmefinance.com/about-us/#Why">
-                  <span className="menu-title-text">Why choose us</span>
-                </a>
-              </li>
-              <li
-                id="menu-item-10333"
-                className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-10333"
-              >
-                <a href="https://gmefinance.com/blogs/">
-                  <span className="menu-title-text">Blog</span>
-                </a>
-              </li>
-              <li
-                id="menu-item-10334"
-                className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-10334"
-              >
-                <a href="https://gmefinance.com/contact-us/">
-                  <span className="menu-title-text">Contact Us</span>
-                </a>
-              </li>
-            </ul>
-          </li> */}
         </UlWrapper>
       </NavWrapper>
     </NavigationWrapper>

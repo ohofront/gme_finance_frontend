@@ -14,9 +14,9 @@ const Footer = () => {
       tempArray = arr.splice(0, chunk);
       result.push(tempArray);
     }
-    console.log("result:", result);
     return result;
   };
+
   return (
     <FooterSection>
       <FooterContainerRow>
@@ -45,38 +45,44 @@ const Footer = () => {
                                 <FooterDividerWrapper>
                                   <FooterDividerContent />
                                 </FooterDividerWrapper>
-                                <FooterContetElemtent>
-                                  <FooterContentWpbWrapper>
-                                    {splitArray(item.subTab, 7).map(
-                                      (sub, index) => {
-                                        return (
-                                          <ul
-                                            style={{
-                                              marginBottom: 30,
-                                              listStyle: "none",
-                                            }}
-                                          >
-                                            {sub.map((subitem, index) => {
-                                              console.log("subitem:", subitem);
-                                              return (
-                                                <li
-                                                  key={index}
-                                                  style={{
-                                                    listStyle: "disc",
-                                                    listStylePosition:
-                                                      "outside",
-                                                  }}
-                                                >
-                                                  <a>{subitem}</a>
-                                                </li>
-                                              );
-                                            })}
-                                          </ul>
-                                        );
-                                      }
-                                    )}
-                                  </FooterContentWpbWrapper>
-                                </FooterContetElemtent>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                  }}
+                                >
+                                  {splitArray(item.subTab, 7).map(
+                                    (sub, index) => {
+                                      return (
+                                        <FooterContetElemtent key={index}>
+                                          <FooterContentWpbWrapper>
+                                            <ul
+                                              style={{
+                                                listStyle: "none",
+                                                marginRight: 20,
+                                              }}
+                                            >
+                                              {sub.map((subitem, index) => {
+                                                return (
+                                                  <LiWrapper
+                                                    key={index}
+                                                    style={{
+                                                      listStyle: "disc",
+                                                      listStylePosition:
+                                                        "outside",
+                                                    }}
+                                                  >
+                                                    <a>{subitem}</a>
+                                                  </LiWrapper>
+                                                );
+                                              })}
+                                            </ul>
+                                          </FooterContentWpbWrapper>
+                                        </FooterContetElemtent>
+                                      );
+                                    }
+                                  )}
+                                </div>
                               </FooterContentWpbWrapper>
                             </FooterCotentColumnInner>
                           </FooterContentColumn>
@@ -378,7 +384,7 @@ const FooterContentColumn = styled.div`
   background-position: center;
   position: relative;
   @media screen and (min-width: 690px) {
-    width: 25%;
+    width: 33%;
   }
 `;
 const FooterCotentColumnInner = styled.div`
@@ -471,4 +477,8 @@ const FooterNectarIcon = styled.div`
 `;
 const FooterContentRawHtml = styled.div`
   margin-bottom: 24px;
+`;
+const LiWrapper = styled.li`
+  list-style: disc;
+  list-style-position: outside;
 `;

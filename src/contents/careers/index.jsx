@@ -1,6 +1,7 @@
 import CareersBanner from "./banner";
 import JoinCommunity from "./community";
 import Perks from "./perks";
+import Workers from "./workers";
 
 const Careers = () => {
   return (
@@ -8,6 +9,7 @@ const Careers = () => {
       <CareersBanner />
       <Perks />
       <JoinCommunity />
+      <Workers />
     </>
   );
 };

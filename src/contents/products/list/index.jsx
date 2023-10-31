@@ -22,6 +22,7 @@ const ProductList = () => {
                           <ProductImageLoaded>
                             <img
                               src={item.src}
+                              alt="ProductImage"
                               style={{
                                 opacity: 1,
                                 transform: "none",
@@ -52,7 +53,7 @@ const ProductList = () => {
                         <h3 style={{ marginBottom: 10 }}>{item.title}</h3>
                         {item.subItem.map((sub, index) => {
                           return (
-                            <>
+                            <div key={index}>
                               {sub.subtitle !== "" ? (
                                 <p style={{ marginBottom: 30 }}>
                                   <strong>{sub.subtitle}</strong>
@@ -70,7 +71,7 @@ const ProductList = () => {
                                   {sub.content4}
                                 </p>
                               )}
-                            </>
+                            </div>
                           );
                         })}
                       </ProductContentWbpWrapper>
@@ -133,6 +134,7 @@ const ProductList = () => {
                           <ProductImageLoaded>
                             <img
                               src={item.src}
+                              alt="ProductImage"
                               style={{
                                 opacity: 1,
                                 transform: "none",

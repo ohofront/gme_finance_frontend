@@ -73,5 +73,9 @@ const GlobalStyles = createGlobalStyle`
         margin-left: 30px;
         margin-bottom: 30px;
     }
+    ul li {
+        list-style: disc;
+        list-style-position: outside;
+    }
 `;
 export default GlobalStyles;
