@@ -3,6 +3,8 @@ import Introduction from "contents/aboutus/introduction";
 import Why from "contents/aboutus/introduction/why";
 import Careers from "contents/careers";
 import ContactUs from "contents/contact";
+import Countries from "contents/countries";
+import Bangladesh from "contents/countries/bangladesh";
 import Products from "contents/products";
 import MainLayout from "layout/MainLayout";
 import { lazy } from "react";
@@ -73,6 +75,22 @@ const Router = () => {
       },
     ],
   };
+  const countriesRoutes = {
+    path: "/countries",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "",
+        element: <Countries />,
+        children: [
+          {
+            path: "bangladesh",
+            element: <Bangladesh />,
+          },
+        ],
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -81,6 +99,7 @@ const Router = () => {
     contactusRoutes,
     productRoutes,
     careersRoutes,
+    countriesRoutes,
   ];
   return useRoutes(routes);
 };

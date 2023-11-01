@@ -1,3 +1,4 @@
+import Apply from "./apply";
 import CareersBanner from "./banner";
 import JoinCommunity from "./community";
 import Perks from "./perks";
@@ -10,6 +11,7 @@ const Careers = () => {
       <Perks />
       <JoinCommunity />
       <Workers />
+      <Apply />
     </>
   );
 };
