@@ -12,9 +12,9 @@ const Youtube = () => {
             <YoutubeWbpWrapper>
               <YoutubeContentWrapper>
                 <WpbWrapper>
-                  <VideoWpbWrapper style={{ left: "-0px" }}>
+                  <VideoWpbWrapper style={{ left: "0px" }}>
                     <iframe
-                      width={1080}
+                      width="100%"
                       height={608}
                       src="https://www.youtube.com/embed/aePuJafyedg?feature=oembed"
                     />
@@ -121,4 +121,5 @@ const VideoWpbWrapper = styled.div`
   margin-bottom: 0;
   position: relative;
   width: 100%;
+  height: 100%;
 `;

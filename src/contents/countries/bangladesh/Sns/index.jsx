@@ -6,7 +6,7 @@ import imo from "assets/images/countries/bangladesh/imo.png";
 import Divider from "components/Divider";
 import RowWrapper from "components/RowWrapper";
 import RowBgWrapper from "components/RowBgWrapper";
-import bangladesh from "assets/images/contact/asia/bangladesh.png";
+import bangladesh from "assets/images/countries/bangladesh/flag.png";
 const Sns = () => {
   return (
     <IntroductionBannerWrapper>
@@ -52,7 +52,7 @@ const Sns = () => {
                       style={{
                         display: "flex",
                         position: "absolute",
-                        top: 0,
+                        top: -50,
                         left: 700,
                       }}
                     >
@@ -63,7 +63,7 @@ const Sns = () => {
                         display: "flex",
                         position: "absolute",
                         bottom: 0,
-                        left: 600,
+                        left: 650,
                       }}
                     >
                       <img
@@ -94,7 +94,7 @@ const Sns = () => {
                         display: "flex",
                         position: "absolute",
                         bottom: -80,
-                        left: 600,
+                        left: 650,
                       }}
                     >
                       <img src={imo} width={50} style={{ marginRight: 10 }} />

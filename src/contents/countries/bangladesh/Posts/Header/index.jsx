@@ -33,7 +33,7 @@ const PostHeader = () => {
 export default PostHeader;
 const QuickHeaderRowInner = styled.div`
   margin-bottom: 24px;
-  margin-top: 100px !important;
+  margin-top: 50px !important;
   position: relative;
 `;
 const QuickHeaderDarkLeft = styled.div`
