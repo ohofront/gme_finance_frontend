@@ -6,6 +6,7 @@ import ContactUs from "contents/contact";
 import Countries from "contents/countries";
 import Bangladesh from "contents/countries/bangladesh";
 import Products from "contents/products";
+import CountryLayout from "layout/CountryLayout";
 import MainLayout from "layout/MainLayout";
 import { lazy } from "react";
 import { Navigate, useRoutes } from "react-router-dom";
@@ -82,12 +83,16 @@ const Router = () => {
       {
         path: "",
         element: <Countries />,
-        children: [
-          {
-            path: "bangladesh",
-            element: <Bangladesh />,
-          },
-        ],
+      },
+    ],
+  };
+  const bangladeshRoutes = {
+    path: "/bangladesh",
+    element: <CountryLayout />,
+    children: [
+      {
+        path: "",
+        element: <Bangladesh />,
       },
     ],
   };
@@ -100,6 +105,7 @@ const Router = () => {
     productRoutes,
     careersRoutes,
     countriesRoutes,
+    bangladeshRoutes,
   ];
   return useRoutes(routes);
 };

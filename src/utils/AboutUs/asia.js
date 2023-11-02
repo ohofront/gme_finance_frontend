@@ -17,6 +17,7 @@ const asia = [
   {
     id: 1,
     name: "Myanmar Loan",
+    country: "Myanmar",
     sns: [
       {
         type: "facebook",
@@ -36,6 +37,7 @@ const asia = [
   {
     id: 2,
     name: "Sri Lanka Loan",
+    country: "Sri Lanka",
     sns: [
       {
         type: "facebook",
@@ -55,6 +57,7 @@ const asia = [
   {
     id: 3,
     name: "Indonesia Loan",
+    country: "Indonesia",
     sns: [
       {
         type: "facebook",
@@ -74,6 +77,7 @@ const asia = [
   {
     id: 4,
     name: "Cambodia Loan",
+    country: "Cambodia",
     sns: [
       {
         type: "facebook",
@@ -93,6 +97,7 @@ const asia = [
   {
     id: 5,
     name: "Nepal Loan",
+    country: "Nepal",
     sns: [
       {
         type: "facebook",
@@ -112,6 +117,7 @@ const asia = [
   {
     id: 6,
     name: "Bangladesh Loan",
+    country: "Bangladesh",
     sns: [
       {
         type: "facebook",
@@ -131,6 +137,7 @@ const asia = [
   {
     id: 7,
     name: "Thailand Loan",
+    country: "Thailand",
     sns: [
       {
         type: "facebook",
@@ -150,6 +157,7 @@ const asia = [
   {
     id: 8,
     name: "Uzbekistan & CIS Loan",
+    country: "CIS",
     sns: [
       {
         type: "facebook",
@@ -169,6 +177,7 @@ const asia = [
   {
     id: 9,
     name: "Vietnam Loan",
+    country: "Vietnam",
     sns: [
       {
         type: "facebook",
@@ -188,6 +197,7 @@ const asia = [
   {
     id: 10,
     name: "Philippines Loan",
+    country: "Philippines",
     sns: [
       {
         type: "facebook",
@@ -207,6 +217,7 @@ const asia = [
   {
     id: 11,
     name: "India Loan",
+    country: "India",
     sns: [
       {
         type: "facebook",
@@ -226,6 +237,7 @@ const asia = [
   {
     id: 12,
     name: "Mongolia Loan",
+    country: "Mongolia",
     sns: [
       {
         type: "facebook",
@@ -245,6 +257,7 @@ const asia = [
   {
     id: 13,
     name: "Pakistan Loan",
+    country: "Pakistan",
     sns: [
       {
         type: "facebook",
@@ -264,6 +277,7 @@ const asia = [
   {
     id: 14,
     name: "China Loan",
+    country: "China",
     sns: [
       {
         type: "facebook",
