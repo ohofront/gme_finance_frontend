@@ -5,6 +5,9 @@ import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import styled from "styled-components";
 import InfiniteCarousel from "components/InfiniteCarousel";
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
+
 const Carousel = () => {
   const slider = useRef();
   const settings = {
@@ -18,7 +21,12 @@ const Carousel = () => {
 
   return (
     <CountriesWrapper>
-      <InfiniteCarousel carouselList={banners} />
+      {/* <InfiniteCarousel carouselList={banners} /> */}
+      <AwesomeSlider play={true} cancelOnInteraction={false} interval={3000}>
+        {banners.map((item, index) => {
+          return <div data-src={item.src} />;
+        })}
+      </AwesomeSlider>
     </CountriesWrapper>
   );
 };
