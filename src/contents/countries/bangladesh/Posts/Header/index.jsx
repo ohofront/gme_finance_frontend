@@ -13,10 +13,10 @@ const PostHeader = () => {
                 <QuickHeaderWpbWrapper>
                   <h3
                     style={{
-                      textAlign: "center",
-                      fontFamily: "Poppins",
-                      fontSize: 30,
-                      fontWeight: 600,
+                      fontFamily: "SANGJU Gyeongcheon Island",
+                      fontSize: 50,
+                      fontWeight: 500,
+                      color: "#2d6065",
                     }}
                   >
                     FACEBOOK POSTS

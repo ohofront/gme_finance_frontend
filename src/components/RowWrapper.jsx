@@ -23,12 +23,12 @@ const RowWrapper = (props) => {
 export default RowWrapper;
 
 const Wrapper = styled.div`
-  --scroll-bar-w: 13px;
+  --scroll-bar-w: -30px;
   margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
   left: 50%;
   width: calc(100vw - var(--scroll-bar-w));
   overflow: hidden;
-  height: 100%;
+  height: 110%;
   position: absolute;
   top: 0;
 `;

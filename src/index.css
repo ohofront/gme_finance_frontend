@@ -16,3 +16,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  font-weight: normal;
+  src: url("./fonts/SANGJU Gyeongcheon Island.ttf") format("truetype");
+}

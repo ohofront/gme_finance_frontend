@@ -1,7 +1,12 @@
+import Divider from "components/Divider";
 import RowBgWrapper2 from "components/RowBgWrapper2";
 import styled from "styled-components";
 import blog from "utils/Countries/Bangladesh/blog";
-
+import {
+  AiOutlineUser,
+  AiOutlineHeart,
+  AiOutlineComment,
+} from "react-icons/ai";
 const BlogsContent = () => {
   return (
     <QuickHeaderRowInner>
@@ -40,6 +45,7 @@ const BlogsContent = () => {
                                 <BlogContentWrapper>
                                   <BlogContentHeader>
                                     <span>{item.date}</span>
+                                    <Divider height={20} />
                                     <h3 class="title">
                                       <a href="https://gmefinance.com/2023/09/04/%e0%a6%9c%e0%a6%bf%e0%a6%8f%e0%a6%ae%e0%a6%87-%e0%a6%ab%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a8%e0%a7%8d%e0%a6%b8-%e0%a6%8f%e0%a6%b0-%e0%a6%87%e0%a6%ad%e0%a7%87%e0%a6%a8%e0%a7%8d/">
                                         {item.title}
@@ -52,14 +58,17 @@ const BlogsContent = () => {
                               <BlogPostMeta>
                                 <BlogAuthor>
                                   <a href="https://gmefinance.com/author/taizuligmeremit-com/">
-                                    <UserIcon />
+                                    <AiOutlineUser
+                                      size={15}
+                                      style={{ marginRight: "5px" }}
+                                    />
                                     {item.writer}
                                   </a>
                                 </BlogAuthor>
 
                                 <BlogAuthor>
                                   <a href="https://gmefinance.com/2023/09/04/%e0%a6%9c%e0%a6%bf%e0%a6%8f%e0%a6%ae%e0%a6%87-%e0%a6%ab%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a8%e0%a7%8d%e0%a6%b8-%e0%a6%8f%e0%a6%b0-%e0%a6%87%e0%a6%ad%e0%a7%87%e0%a6%a8%e0%a7%8d/#respond">
-                                    <i class="icon-default-style steadysets-icon-chat-3"></i>{" "}
+                                    <AiOutlineComment size={15} />
                                     {item.comment}
                                   </a>
                                 </BlogAuthor>
@@ -72,7 +81,7 @@ const BlogsContent = () => {
                                     title="Love this"
                                   >
                                     {" "}
-                                    <i class="icon-salient-heart-2"></i>
+                                    <AiOutlineHeart size={15} />
                                     <span class="total_loves">
                                       <span class="nectar-love-count">
                                         {item.love}
@@ -100,7 +109,6 @@ export default BlogsContent;
 const QuickHeaderRowInner = styled.div`
   margin-bottom: 24px;
   margin-top: 50px !important;
-  padding: 20px;
   position: relative;
 `;
 const QuickHeaderDarkLeft = styled.div`
@@ -123,6 +131,7 @@ const QuickHeaderDarkLeft = styled.div`
 `;
 const QuickHeaderContainer = styled.div`
   float: none;
+  justify-content: center;
   margin-right: 0;
   margin-left: 0;
   padding-left: 1%;
@@ -130,7 +139,7 @@ const QuickHeaderContainer = styled.div`
   box-shadow: none;
   background-position: center;
   position: relative;
-  display: block;
+  display: flex;
   @media screen and (min-width: 690px) {
     width: 100%;
   }
@@ -242,16 +251,21 @@ const BlogContentHeader = styled.div`
   font-size: 12px;
   color: #555;
   margin-bottom: 12px;
+  padding-bottom: 20px;
 `;
 const BlogPostMeta = styled.div`
   padding: 6px 21px;
   z-index: 101;
   position: relative;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-bottom: 0;
 `;
 const BlogAuthor = styled.span`
-  margin-right: 13px;
+  margin-right: 20px;
   margin-left: 0;
+  color: #555;
+  font-size: 12px;
 `;
 const BlogLoveWrapper = styled.div`
   margin-right: 0;
@@ -259,6 +273,7 @@ const BlogLoveWrapper = styled.div`
   display: inline-block;
   text-align: center;
   line-height: 20px;
+  font-size: 12px;
 `;
 const UserIcon = styled.i`
   width: 15px;

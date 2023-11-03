@@ -46,14 +46,14 @@ const Sns = () => {
                       justifyContent: "center",
                       textAlign: "center",
                       height: "100%",
+                      paddingTop: "100px",
                     }}
                   >
                     <div
                       style={{
                         display: "flex",
                         position: "absolute",
-                        top: -50,
-                        left: 700,
+                        top: "5px",
                       }}
                     >
                       <img src={bangladesh} width={200} />
@@ -62,8 +62,6 @@ const Sns = () => {
                       style={{
                         display: "flex",
                         position: "absolute",
-                        bottom: 0,
-                        left: 650,
                       }}
                     >
                       <img
@@ -93,8 +91,7 @@ const Sns = () => {
                       style={{
                         display: "flex",
                         position: "absolute",
-                        bottom: -80,
-                        left: 650,
+                        paddingTop: "100px",
                       }}
                     >
                       <img src={imo} width={50} style={{ marginRight: 10 }} />
@@ -150,6 +147,7 @@ const IntroductionBannerWrapper = styled.div`
 const IntroductionDarkLeft = styled.div`
   color: #fff;
   float: none;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   z-index: 10;

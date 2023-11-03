@@ -70,18 +70,7 @@ const QuickContentDarkLeft = styled.div`
     visibility: hidden;
   }
 `;
-const LicenseDarkLeft = styled.div`
-  display: flex;
-  justify-content: center;
-  flew-wrap: wrap;
-  float: none;
-  margin-bottom: 0 !important;
-  z-index: 10;
-  margin-left: -1%;
-  margin-right: -1%;
-  width: auto;
-  position: relative;
-`;
+
 const LicenseContainer = styled.div`
   display: block;
   float: none;
