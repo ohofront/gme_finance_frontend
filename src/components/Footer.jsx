@@ -5,8 +5,11 @@ import RowBgWrapper from "./RowBgWrapper";
 import FooterTab from "utils/Footer";
 import Divider2 from "./Divider2";
 import logo from "assets/images/footer/footerLogo.png";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [splist, setSplit] = useState([]);
+
   const splitArray = (arr, chunk) => {
     const result = [];
     while (arr.length > 0) {
@@ -72,7 +75,9 @@ const Footer = () => {
                                                         "outside",
                                                     }}
                                                   >
-                                                    <a>{subitem}</a>
+                                                    <a href={subitem.href}>
+                                                      {subitem.name}
+                                                    </a>
                                                   </LiWrapper>
                                                 );
                                               })}
@@ -384,7 +389,7 @@ const FooterContentColumn = styled.div`
   background-position: center;
   position: relative;
   @media screen and (min-width: 690px) {
-    width: 33%;
+    width: 25%;
   }
 `;
 const FooterCotentColumnInner = styled.div`

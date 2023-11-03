@@ -32,7 +32,7 @@ const country = [
       },
     ],
     flag: myanmar,
-    href: "/countries/bangladesh",
+    href: "/mmr",
   },
   {
     id: 2,

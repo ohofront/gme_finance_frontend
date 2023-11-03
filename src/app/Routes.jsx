@@ -5,6 +5,7 @@ import Careers from "contents/careers";
 import ContactUs from "contents/contact";
 import Countries from "contents/countries";
 import Bangladesh from "contents/countries/bangladesh";
+import Myanmar from "contents/countries/myanmar";
 import Products from "contents/products";
 import CountryLayout from "layout/CountryLayout";
 import MainLayout from "layout/MainLayout";
@@ -96,6 +97,16 @@ const Routes = () => {
       },
     ],
   };
+  const myanmarRoutes = {
+    path: "/mmr",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "",
+        element: <Myanmar />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -106,6 +117,7 @@ const Routes = () => {
     careersRoutes,
     countriesRoutes,
     bangladeshRoutes,
+    myanmarRoutes,
   ];
   return useRoutes(routes);
 };
