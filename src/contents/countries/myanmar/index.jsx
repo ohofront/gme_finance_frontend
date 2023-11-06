@@ -1,7 +1,12 @@
+import Banner from "./Banner";
+import Divider from "./Diver";
+
 const Myanmar = () => {
   return (
     <>
-      <div>미얀마</div>
+      <Banner />
+      <Divider />
+      <Divider />
     </>
   );
 };
