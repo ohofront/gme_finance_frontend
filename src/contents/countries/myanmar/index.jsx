@@ -1,12 +1,13 @@
+import Divider from "components/Divider";
 import Banner from "./Banner";
-import Divider from "./Diver";
+import Sns from "./Sns";
 
 const Myanmar = () => {
   return (
     <>
       <Banner />
-      <Divider />
-      <Divider />
+      <Divider height={100} />
+      <Sns />
     </>
   );
 };

@@ -1,6 +1,8 @@
 import RowBgWrapper from "components/RowBgWrapper";
 import RowBgWrapper2 from "components/RowBgWrapper2";
 import styled from "styled-components";
+import Flag from "./flag";
+import Icon from "./icon";
 
 const Sns = () => {
   return (
@@ -13,8 +15,25 @@ const Sns = () => {
               <SnsRowInner>
                 <RowBgWrapper />
                 <SnsRowSpanLeft>
-                  '여기 배열'
-                  <SnsRowContainer></SnsRowContainer>
+                  <SnsRowContainer>
+                    <SnsRowColumnInner>
+                      <SnsWpbWrapper>
+                        <Flag />
+                      </SnsWpbWrapper>
+                    </SnsRowColumnInner>
+                  </SnsRowContainer>
+                  <SnsRowContainer>
+                    <SnsRowColumnInner>
+                      <SnsWpbWrapper>
+                        <Icon />
+                      </SnsWpbWrapper>
+                    </SnsRowColumnInner>
+                  </SnsRowContainer>
+                  <SnsRowContainer>
+                    <SnsRowColumnInner>
+                      <SnsWpbWrapper></SnsWpbWrapper>
+                    </SnsRowColumnInner>
+                  </SnsRowContainer>
                 </SnsRowSpanLeft>
               </SnsRowInner>
             </SnsWpbWrapper>
@@ -41,6 +60,20 @@ const SnsDarkLeft = styled.div`
   margin-right: -1%;
   width: auto;
   position: relative;
+  @media screen and (min-width: 690px) {
+    width: 100%;
+  }
+`;
+const SnsContainer = styled.div`
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+  display: block;
   @media screen and (min-width: 690px) {
     width: 100%;
   }
@@ -78,4 +111,7 @@ const SnsRowContainer = styled.div`
   @media screen and (min-width: 690px) {
     width: 33.3%;
   }
+`;
+const SnsRowColumnInner = styled.div`
+  position: relative;
 `;

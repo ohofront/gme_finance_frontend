@@ -98,7 +98,7 @@ const Routes = () => {
     ],
   };
   const myanmarRoutes = {
-    path: "/mmr",
+    path: "/myanmar",
     element: <MainLayout />,
     children: [
       {
