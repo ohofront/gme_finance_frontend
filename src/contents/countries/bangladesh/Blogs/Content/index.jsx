@@ -29,7 +29,7 @@ const BlogsContent = () => {
                                     width="600"
                                     height="403"
                                     src={item.src}
-                                    class="attachment-portfolio-thumb size-portfolio-thumb skip-lazy wp-post-image auto-height"
+                                    className="attachment-portfolio-thumb size-portfolio-thumb skip-lazy wp-post-image auto-height"
                                     alt=""
                                     decoding="async"
                                     title=""
@@ -46,13 +46,13 @@ const BlogsContent = () => {
                                   <BlogContentHeader>
                                     <span>{item.date}</span>
                                     <Divider height={20} />
-                                    <h3 class="title">
+                                    <h3 className="title">
                                       <a href="https://gmefinance.com/2023/09/04/%e0%a6%9c%e0%a6%bf%e0%a6%8f%e0%a6%ae%e0%a6%87-%e0%a6%ab%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a8%e0%a7%8d%e0%a6%b8-%e0%a6%8f%e0%a6%b0-%e0%a6%87%e0%a6%ad%e0%a7%87%e0%a6%a8%e0%a7%8d/">
                                         {item.title}
                                       </a>
                                     </h3>
                                   </BlogContentHeader>
-                                  <div class="excerpt">{item.content}</div>
+                                  <div className="excerpt">{item.content}</div>
                                 </BlogContentWrapper>
                               </BlogContentInner>
                               <BlogPostMeta>
@@ -76,14 +76,14 @@ const BlogsContent = () => {
                                 <BlogLoveWrapper>
                                   <a
                                     href="#"
-                                    class="nectar-love"
+                                    className="nectar-love"
                                     id="nectar-love-11755"
                                     title="Love this"
                                   >
                                     {" "}
                                     <AiOutlineHeart size={15} />
-                                    <span class="total_loves">
-                                      <span class="nectar-love-count">
+                                    <span className="total_loves">
+                                      <span className="nectar-love-count">
                                         {item.love}
                                       </span>
                                     </span>

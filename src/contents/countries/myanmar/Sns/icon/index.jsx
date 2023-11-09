@@ -1,6 +1,6 @@
 import Divider from "components/Divider";
 import styled from "styled-components";
-
+import tiktok from "assets/images/contact/sns/tiktok.png";
 const Icon = () => {
   return (
     <>
@@ -37,10 +37,44 @@ const Icon = () => {
             }}
           ></i>
         </FacebookIcon>
-        <TiktokIconWrapper>
-          <TiktokIconInner></TiktokIconInner>
-        </TiktokIconWrapper>
       </IconWrapper>
+      <TiktokIconWrapper>
+        <TiktokIconInner>
+          <TiktokHoverWrapper>
+            <TiktokImgLoaded>
+              <a
+                style={{
+                  display: "block",
+                  width: "100%",
+                  height: "100%",
+                  position: "block",
+                  left: 0,
+                  top: 0,
+                  zIndex: 1,
+                }}
+              />
+              <img
+                src={tiktok}
+                style={{
+                  opacity: 1,
+                  transition: "opacity 0.5s ease",
+                  transform: 0,
+                  paddingRight: 0,
+                  paddingLeft: 0,
+                  paddingBottom: 0,
+                  marginBottom: 0,
+                  borderRadius: 15,
+                  display: "block",
+                  minHeight: 1,
+                  minWidth: 1,
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </TiktokImgLoaded>
+          </TiktokHoverWrapper>
+        </TiktokIconInner>
+      </TiktokIconWrapper>
     </>
   );
 };
@@ -79,4 +113,15 @@ const TiktokIconInner = styled.div`
   display: inline-block;
   max-width: 60px;
   height: 100%;
+`;
+const TiktokHoverWrapper = styled.div`
+  opacity: 1;
+  margin-bottom: 0;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
+  border-radius: 15px;
+  overflow: visible;
+  position: relative;
+`;
+const TiktokImgLoaded = styled.div`
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
 `;

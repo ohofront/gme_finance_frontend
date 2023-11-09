@@ -6,7 +6,7 @@ const Flag = () => {
       <FlagImageInner>
         <FlagImageHover>
           <img
-            class="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+            className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
             data-delay="0"
             height="265"
             width="265"
