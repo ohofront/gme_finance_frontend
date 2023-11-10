@@ -29,7 +29,7 @@ const MyanmarDarkLeft = styled.div`
   color: #191c1f;
   float: none;
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   z-index: 10;
   margin-bottom: 0 !important;
   margin-left: -1%;

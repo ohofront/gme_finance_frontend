@@ -72,7 +72,7 @@ const QuickContentDarkLeft = styled.div`
 `;
 const LicenseDarkLeft = styled.div`
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;

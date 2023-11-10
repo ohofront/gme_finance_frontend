@@ -33,7 +33,7 @@ const PerksDarkLeft = styled.div`
   margin-left: 0;
   margin-right: 0;
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;

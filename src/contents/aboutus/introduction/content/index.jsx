@@ -63,7 +63,7 @@ const ContentWrapper = styled.div`
 `;
 const IntroductionContentDarkLeft = styled.div`
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;
@@ -95,7 +95,7 @@ const IntroductionContentRowInner = styled.div`
 `;
 const ContentDarkLeft = styled.div`
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;

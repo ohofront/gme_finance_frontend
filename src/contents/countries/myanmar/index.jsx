@@ -3,6 +3,8 @@ import Banner from "./Banner";
 import Sns from "./Sns";
 import Promotion from "./Promotion";
 import Card from "./Card";
+import Vacation from "./Vacation";
+import Call from "./Call";
 
 const Myanmar = () => {
   return (
@@ -11,6 +13,8 @@ const Myanmar = () => {
       <Divider height={100} />
       <Sns />
       <Card />
+      <Vacation />
+      <Call />
     </>
   );
 };

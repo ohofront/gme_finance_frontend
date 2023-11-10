@@ -37,7 +37,7 @@ const PromotionWrapper = styled.div`
 `;
 const PromotionDarkLeft = styled.div`
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;

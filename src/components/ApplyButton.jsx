@@ -22,6 +22,10 @@ const ButtonAWrapper = styled.a`
   opacity: 1;
   line-height: 20px;
   border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `;
 const ButtonSpan = styled.span`
   position: relative;

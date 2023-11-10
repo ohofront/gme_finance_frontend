@@ -94,7 +94,7 @@ const CardWrapper = styled.div`
 `;
 const CardDarkLeft = styled.div`
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
   float: none;
   margin-bottom: 0 !important;
   z-index: 10;
