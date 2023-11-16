@@ -5,6 +5,7 @@ import pattern from "assets/images/countries/myanmar/pattern.jpg";
 import RowBgWrapper6 from "components/RowBgWrapper6";
 import Promotion from "../Promotion";
 import call from "assets/images/countries/myanmar/call.png";
+import ApplyButton from "components/ApplyButton";
 const Call = () => {
   return (
     <>
@@ -53,9 +54,51 @@ const Call = () => {
                               </CallImageHoverWrapper>
                             </CallImageInner>
                           </CallImageWrapper>
+                          <ApplyButton />
                         </CallWpbWrapper>
                       </CallColumnInner>
                     </CallImageContainer>
+                    <CallLetterContainer>
+                      <CallColumnInner>
+                        <CallWpbWrapper>
+                          <Divider height={30} />
+                          <CallContentElement>
+                            <CallWpbWrapper>
+                              <p style={{ paddingBottom: 27 }}>
+                                VISA သက်တမ်း တစ်နှစ်ဆယ်လ မတိုးရသေးလည်း GME မှ
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                ချေးငွေထုတ်ပေးနေပါသည်။
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                E9 visa ကိုင်ဆောင်သူများသည် ကိုရီးယားနိုင်ငံတွင်
+                                တရားဝင် လေးနှစ်နှင့်ဆယ်လ
+                                အလုပ်လုပ်ကိုင်ခွင့်ရှိကြသည်။
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                ပထမဆုံး visa ကို သုံးနှစ်တိတိရရှိကြပြီးနောက်
+                                သုံးနှစ်ပြည့်သောအခါ ကျန်ရှိနေသော
+                                တစ်နှစ်ဆယ်လသက်တမ်းကိုတိုးယူရရှိကြပါသည်။
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                သို့ပါသောကြောင့် GME တွင် ချေးငွေယူမည့် Customer
+                                တိုင်း ဒုတိယအကြိမ် တစ်နှစ်ဆယ်လသက်တမ်းကို
+                                မတိုးရသေးပါကလည်း
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                ထိုသက်တမ်းအထိ တွက်ချက်ပြီး
+                                ချေးငွေထုတ်ပေးနေပါသည်။
+                              </p>
+                              <p style={{ paddingBottom: 27 }}>
+                                Customer များအတွက် အမြဲတမ်း ပိုမိုကောင်းမွန်သည့်
+                                ဝန်ဆောင်မှုများပေးနိုင်ရန် GME မှ အစဉ်
+                                ကြိုးစားလျက်……
+                              </p>
+                            </CallWpbWrapper>
+                          </CallContentElement>
+                        </CallWpbWrapper>
+                      </CallColumnInner>
+                    </CallLetterContainer>
                   </CallDarkLeft>
                 </CallRowInner>
               </CallWpbWrapper>
@@ -123,7 +166,7 @@ const CallImageContainer = styled.div`
 const CallImageWrapper = styled.div`
   text-align: center;
   line-height: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 `;
 const CallImageInner = styled.div`
   height: 100%;
@@ -142,4 +185,21 @@ const CallImageHoverWrapper = styled.div`
 const CallImageLoaded = styled.div`
   display: inline-block;
   transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+`;
+const CallLetterContainer = styled.div`
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+  @media screen and (min-width: 690px) {
+    width: 75%;
+  }
+`;
+const CallContentElement = styled.div`
+  margin-bottom: 0;
 `;
