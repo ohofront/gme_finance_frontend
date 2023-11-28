@@ -5,12 +5,12 @@ import RowBgWrapper from "./RowBgWrapper";
 import FooterTab from "utils/Footer";
 import Divider2 from "./Divider2";
 import logo from "assets/images/footer/footerLogo.png";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const Footer = () => {
   const [splist, setSplit] = useState([]);
 
-  const splitArray = (arr, chunk) => {
+  const splitArray = useCallback((arr, chunk) => {
     const result = [];
     while (arr.length > 0) {
       let tempArray;
@@ -18,7 +18,7 @@ const Footer = () => {
       result.push(tempArray);
     }
     return result;
-  };
+  }, []);
 
   return (
     <FooterSection>

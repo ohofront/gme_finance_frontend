@@ -6,6 +6,7 @@ import ContactUs from "contents/contact";
 import Countries from "contents/countries";
 import Bangladesh from "contents/countries/bangladesh";
 import Myanmar from "contents/countries/myanmar";
+import Srilnaka from "contents/countries/srilanka";
 import Products from "contents/products";
 import CountryLayout from "layout/CountryLayout";
 import MainLayout from "layout/MainLayout";
@@ -107,6 +108,16 @@ const Routes = () => {
       },
     ],
   };
+  const srilankaRoutes = {
+    path: "/srilanka",
+    element: <CountryLayout color={"#ffc600"} />,
+    children: [
+      {
+        path: "",
+        element: <Srilnaka />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -118,6 +129,7 @@ const Routes = () => {
     countriesRoutes,
     bangladeshRoutes,
     myanmarRoutes,
+    srilankaRoutes,
   ];
   return useRoutes(routes);
 };

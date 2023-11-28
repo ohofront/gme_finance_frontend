@@ -53,7 +53,7 @@ const country = [
       },
     ],
     flag: srilanka,
-    href: "/countries/bangladesh",
+    href: "/srilanka",
   },
   {
     id: 3,

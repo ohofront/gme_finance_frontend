@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 
-const CountryLayout = () => {
+const CountryLayout = (props) => {
   const [loading, setLoading] = useState(false);
   const api = async () => {
     try {
@@ -26,7 +26,7 @@ const CountryLayout = () => {
     <>
       <Header />
       <AjaxContentWrapper>
-        <ContainerWrapper>
+        <ContainerWrapper color={props.color}>
           <MainContent>
             <MainContentRow>
               <Outlet />
@@ -50,7 +50,7 @@ const ContainerWrapper = styled.div`
   margin-top: 0 !important;
   padding-top: 0;
   flex-grow: 1;
-  background-color: #fafbfc;
+  background-color: ${(props) => props.color};
   position: relative;
   z-index: 10;
 `;
