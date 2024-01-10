@@ -1,6 +1,6 @@
 import RowBgWrapper from "components/RowBgWrapper";
 import styled from "styled-components";
-import { headers, items } from "utils/Countries/Thailand/detail";
+import { headers, items } from "utils/Countries/Srilanka/detail";
 
 const DetailHeader = () => {
   const headerKey = headers.map((header) => header.value);

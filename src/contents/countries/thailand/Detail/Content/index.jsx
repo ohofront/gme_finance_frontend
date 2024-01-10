@@ -4,7 +4,7 @@ import RowBgWrapper from "components/RowBgWrapper";
 import RowBgWrapper2 from "components/RowBgWrapper2";
 import { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
-import { feature, headers, items } from "utils/Countries/Thailand/detail";
+import { feature, headers, items } from "utils/Countries/Srilanka/detail";
 const DetailContent = () => {
   useEffect(() => {
     console.log(headers);

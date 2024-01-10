@@ -1,17 +1,23 @@
 import styled from "styled-components";
 import Carousel from "../bangladesh/Carousel";
+import Banner from "./Banner";
+import Divider from "components/Divider";
+import Sns from "./Sns";
+import Card from "./Card";
+import Detail from "./Detail";
+import BlogsContent from "./Blogs";
+import Apply from "./Apply";
 
 const Srilnaka = () => {
   return (
-    <ContentWrapper>
-      <Carousel />
-    </ContentWrapper>
+    <>
+      <Banner />
+      <Divider />
+      <Sns />
+      <Detail />
+      <BlogsContent />
+      <Apply />
+    </>
   );
 };
 export default Srilnaka;
-export const ContentWrapper = styled.div`
-  background-repeat: no-repeat;
-  background-color: #ffc600;
-  height: 100%;
-  width: 100%;
-`;

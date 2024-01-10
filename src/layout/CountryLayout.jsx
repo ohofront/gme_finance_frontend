@@ -57,6 +57,9 @@ const ContainerWrapper = styled.div`
 const MainContent = styled.div`
   margin: 0 auto;
   position: relative;
+  @media only screen and (min-width: 1300px) {
+    max-width: 1100px;
+  }
 `;
 const MainContentRow = styled.div`
   position: relative;
