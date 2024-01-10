@@ -158,7 +158,7 @@ const country = [
       },
     ],
     flag: thailand,
-    href: "/countries/bangladesh",
+    href: "/thailand",
   },
   {
     id: 8,

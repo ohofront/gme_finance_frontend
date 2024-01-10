@@ -7,6 +7,7 @@ import Countries from "contents/countries";
 import Bangladesh from "contents/countries/bangladesh";
 import Myanmar from "contents/countries/myanmar";
 import Srilnaka from "contents/countries/srilanka";
+import Thailand from "contents/countries/thailand";
 import Products from "contents/products";
 import CountryLayout from "layout/CountryLayout";
 import MainLayout from "layout/MainLayout";
@@ -98,6 +99,16 @@ const Routes = () => {
       },
     ],
   };
+  const thailandRouts = {
+    path: "/thailand",
+    element: <CountryLayout />,
+    children: [
+      {
+        path: "",
+        element: <Thailand />,
+      },
+    ],
+  };
   const myanmarRoutes = {
     path: "/myanmar",
     element: <MainLayout />,
@@ -128,6 +139,7 @@ const Routes = () => {
     careersRoutes,
     countriesRoutes,
     bangladeshRoutes,
+    thailandRouts,
     myanmarRoutes,
     srilankaRoutes,
   ];
