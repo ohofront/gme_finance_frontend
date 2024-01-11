@@ -5,6 +5,7 @@ import Careers from "contents/careers";
 import ContactUs from "contents/contact";
 import Countries from "contents/countries";
 import Bangladesh from "contents/countries/bangladesh";
+import Indonesia from "contents/countries/indonesia";
 import Myanmar from "contents/countries/myanmar";
 import Srilnaka from "contents/countries/srilanka";
 import Thailand from "contents/countries/thailand";
@@ -129,6 +130,16 @@ const Routes = () => {
       },
     ],
   };
+  const indoneisaRoutes = {
+    path: "/indonesia",
+    element: <CountryLayout />,
+    children: [
+      {
+        path: "",
+        element: <Indonesia />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -142,6 +153,7 @@ const Routes = () => {
     thailandRouts,
     myanmarRoutes,
     srilankaRoutes,
+    indoneisaRoutes,
   ];
   return useRoutes(routes);
 };
