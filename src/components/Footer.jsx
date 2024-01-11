@@ -11,10 +11,11 @@ const Footer = () => {
   const [splist, setSplit] = useState([]);
 
   const splitArray = useCallback((arr, chunk) => {
-    const result = [];
+    let result = [];
     while (arr.length > 0) {
       let tempArray;
       tempArray = arr.splice(0, chunk);
+      console.log(tempArray);
       result.push(tempArray);
     }
     return result;

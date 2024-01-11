@@ -8,6 +8,7 @@ import Bangladesh from "contents/countries/bangladesh";
 import Cambodia from "contents/countries/cambodia";
 import Indonesia from "contents/countries/indonesia";
 import Myanmar from "contents/countries/myanmar";
+import Nepal from "contents/countries/nepal";
 import Srilnaka from "contents/countries/srilanka";
 import Thailand from "contents/countries/thailand";
 import Products from "contents/products";
@@ -151,6 +152,16 @@ const Routes = () => {
       },
     ],
   };
+  const nepalRoutes = {
+    path: "/nepal",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "",
+        element: <Nepal />,
+      },
+    ],
+  };
   const routes = [
     rootRoutes,
     noMatchRoutes,
@@ -166,6 +177,7 @@ const Routes = () => {
     srilankaRoutes,
     indoneisaRoutes,
     cambodiaRoutes,
+    nepalRoutes,
   ];
   return useRoutes(routes);
 };

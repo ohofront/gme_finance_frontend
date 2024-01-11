@@ -116,7 +116,7 @@ const country = [
       },
     ],
     flag: nepal,
-    href: "/countries/bangladesh",
+    href: "/nepal",
   },
   {
     id: 6,

@@ -18,7 +18,7 @@ const HeadermenuTab = [
       {
         id: 3,
         name: "Blog",
-        href: "/blog",
+        href: "https://gmefinance.com/blogs",
       },
       {
         id: 4,
