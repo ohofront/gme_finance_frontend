@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import Promotion from "../Promotion";
 import RowBgWrapper2 from "components/RowBgWrapper2";
 import Divider from "components/Divider";
 import RowBgWrapper from "components/RowBgWrapper";
 import vacation from "assets/images/countries/myanmar/vacation.jpg";
 import ApplyButton from "components/ApplyButton";
+import Header from "../Header";
 const Vacation = () => {
   return (
     <>
-      <Promotion />
+      <Header title="အလုပ်သစ်မှာလစာတစ်ကြိမ်မှမရသေးရင်ချေးငွေလျှောက်လို့ရနိုင်ပါသလား?" />
       <VacationWrapper>
         <RowBgWrapper2 />
         <VacationDarkLeft>

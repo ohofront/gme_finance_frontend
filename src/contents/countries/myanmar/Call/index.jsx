@@ -3,13 +3,13 @@ import RowBgWrapper from "components/RowBgWrapper";
 import styled from "styled-components";
 import pattern from "assets/images/countries/myanmar/pattern.jpg";
 import RowBgWrapper6 from "components/RowBgWrapper6";
-import Promotion from "../Promotion";
 import call from "assets/images/countries/myanmar/call.png";
 import ApplyButton from "components/ApplyButton";
+import Header from "../Header";
 const Call = () => {
   return (
     <>
-      <Promotion />
+      <Header title="VISA သက်တမ်း တစ်နှစ်ဆယ်လ မတိုးရသေးလည်း ချေးငွေထုတ်ယူနိုင်ပါသည်။" />
       <CallWrapper>
         {/* <RowBgWrapper6 backgroundImage={pattern} /> */}
         <CallDarkLeft>

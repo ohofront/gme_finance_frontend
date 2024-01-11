@@ -1,11 +1,10 @@
 import RowBgWrapper6 from "components/RowBgWrapper6";
 import styled from "styled-components";
-import background from "assets/images/countries/myanmar/background.jpg";
 import Divider from "components/Divider";
 const Banner = () => {
   return (
     <MyanmarWrapper>
-      <RowBgWrapper6 backgroundImage={background} />
+      <RowBgWrapper6 />
       <MyanmarDarkLeft>
         <MyanmarContainer>
           <MyanmarColumnInner>

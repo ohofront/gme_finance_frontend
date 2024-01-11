@@ -3,11 +3,12 @@ import Divider from "components/Divider";
 import RowBgWrapper2 from "components/RowBgWrapper2";
 import styled from "styled-components";
 import card from "assets/images/countries/myanmar/card.jpg";
-import Promotion from "../Promotion";
+import Header from "../Header";
+
 const Card = () => {
   return (
     <>
-      <Promotion />
+      <Header title="အလုပ်သစ်မှာလစာတစ်ကြိမ်မှမရသေးရင်ချေးငွေလျှောက်လို့ရနိုင်ပါသလား?" />
       <CardWrapper>
         <RowBgWrapper2 />
         <CardDarkLeft>

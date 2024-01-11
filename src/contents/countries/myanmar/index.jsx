@@ -6,6 +6,8 @@ import Card from "./Card";
 import Vacation from "./Vacation";
 import Call from "./Call";
 import Youtube from "./Youtube";
+import Introduce from "./Introduce";
+import Apply from "./Apply";
 
 const Myanmar = () => {
   return (
@@ -17,6 +19,8 @@ const Myanmar = () => {
       <Vacation />
       <Call />
       <Youtube />
+      <Introduce />
+      <Apply />
     </>
   );
 };
