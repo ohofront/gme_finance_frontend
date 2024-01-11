@@ -95,7 +95,7 @@ const country = [
       },
     ],
     flag: cambodia,
-    href: "/countries/bangladesh",
+    href: "/cambodia",
   },
   {
     id: 5,
