@@ -54,7 +54,7 @@ const FooterTab = [
       {
         id: 1,
         name: "Myanmar",
-        href: "/mmr",
+        href: "/myanmar",
       },
       {
         id: 2,

@@ -27,7 +27,7 @@ const Apply = () => {
                     overflow: "hidden",
                     opacity: 1,
                     visibility: "visible",
-                    height: "900px",
+                    height: "500px",
                   }}
                 ></iframe>
               </ApplyRawHtml>

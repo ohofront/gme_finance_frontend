@@ -1,9 +1,12 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const ApplyButton = () => {
   return (
     <ButtonAWrapper>
-      <ButtonSpan>Apply Now</ButtonSpan>
+      <Link to="Apply">
+        <ButtonSpan>Apply Now</ButtonSpan>
+      </Link>
     </ButtonAWrapper>
   );
 };

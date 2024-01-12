@@ -10,6 +10,7 @@ const Countries = () => {
   const goCountry = (href) => {
     console.log(href);
     navigate(href);
+    window.location.reload();
   };
   return (
     <CountriesWrapper>

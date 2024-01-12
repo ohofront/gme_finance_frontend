@@ -1,3 +1,4 @@
+import Apply from "./Apply";
 import ProductsBanner from "./banner";
 import ProductList from "./list";
 
@@ -6,6 +7,7 @@ const Products = () => {
     <>
       <ProductsBanner />
       <ProductList />
+      <Apply />
     </>
   );
 };
