@@ -8,11 +8,13 @@ import Call from "./Call";
 import Youtube from "./Youtube";
 import Introduce from "./Introduce";
 import Apply from "./Apply";
+import Banner2 from "./Banner2";
 
 const Myanmar = () => {
   return (
     <>
       <Banner />
+      <Banner2 />
       <Divider height={100} />
       <Sns />
       <Card />
