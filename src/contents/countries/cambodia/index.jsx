@@ -12,10 +12,14 @@ import ApplyButton2 from "components/ApplyButton2";
 import Call from "./Call";
 import Apply from "./Apply";
 import Footer from "./Footer";
+import Banner from "./Banner";
+import Banner2 from "./Banner2";
 
 const Cambodia = () => {
   return (
     <ContentWrapper>
+      <Banner />
+      <Banner2 />
       <Promotion />
       <Sns />
       <FullSection>

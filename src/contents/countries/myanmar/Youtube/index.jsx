@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "../Header";
 import Divider from "components/Divider";
 import ApplyButton2 from "components/ApplyButton2";
+import ApplyButton from "components/ApplyButton";
 
 const Youtube = () => {
   return (
@@ -63,7 +64,7 @@ const Youtube = () => {
                     ၅) Customer မှ ထို link သို့ဝင်၍
                     စာချုပ်ရေးသားဖြည့်စွက်ခြင်းနှင့် ငွေလက်ခံရရှိခြင်း။
                   </p>
-                  <ApplyButton2 />
+                  <ApplyButton />
                 </TextWbpWrapper>
               </TextElement>
             </WpbWrapper>
@@ -124,6 +125,7 @@ const DarkLeft = styled.div`
   margin-right: -1%;
   width: auto;
   position: relative;
+  padding-bottom: 100px;
 `;
 const Container = styled.div`
   display: block;

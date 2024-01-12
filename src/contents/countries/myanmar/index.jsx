@@ -1,5 +1,4 @@
 import Divider from "components/Divider";
-import Banner from "./Banner";
 import Sns from "./Sns";
 import Promotion from "./Promotion";
 import Card from "./Card";
@@ -9,6 +8,7 @@ import Youtube from "./Youtube";
 import Introduce from "./Introduce";
 import Apply from "./Apply";
 import Banner2 from "./Banner2";
+import Banner from "./Banner";
 
 const Myanmar = () => {
   return (

@@ -5,7 +5,7 @@ import RowBgWrapper8 from "components/RowBgWrapper8";
 
 const Apply = () => {
   return (
-    <ApplyWrapper>
+    <ApplyWrapper id="Apply">
       <RowBgWrapper8 background={footer} />
       <ApplyDarkLeft>
         <ApplyContainer>

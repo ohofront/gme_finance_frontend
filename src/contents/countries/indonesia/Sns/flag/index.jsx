@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import flag from "assets/images/countries/indonesia/flag.png";
 
 const Flag = () => {
   return (
@@ -11,10 +12,9 @@ const Flag = () => {
             height="265"
             width="265"
             data-animation="fade-in"
-            src="https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar.png"
+            src={flag}
             alt=""
             sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-            srcset="https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar.png 512w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-300x300.png 300w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-150x150.png 150w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-100x100.png 100w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-140x140.png 140w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-500x500.png 500w, https://gmefinance.com/wp-content/uploads/2022/10/flag_myanmar-350x350.png 350w"
           />
         </FlagImageHover>
       </FlagImageInner>

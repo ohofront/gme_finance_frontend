@@ -6,7 +6,6 @@ import Divider from "components/Divider";
 const Banner = () => {
   return (
     <FullSection>
-      <div>1</div>
       <RowBgWrapper9
         color={
           "radial-gradient(50% 50% at 50% 50%,#ff0000 0%,rgba(255,255,255,0.001) 100%)"

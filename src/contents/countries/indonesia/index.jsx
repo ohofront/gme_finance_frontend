@@ -10,9 +10,13 @@ import Divider4 from "./Divider4";
 import BlogsContent from "./Blogs";
 import Apply from "./Apply";
 import Divider5 from "./Divider5";
+import Banner from "./Banner";
+import Banner2 from "./Banner2";
 const Indonesia = () => {
   return (
     <ContentWrapper>
+      <Banner />
+      <Banner2 />
       <Divider />
       <DetailContent />
       <Sns />

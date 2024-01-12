@@ -8,10 +8,11 @@ import Detail from "./Detail";
 import FacebookPosts from "./Posts";
 import Blogs from "./Blogs";
 import Apply from "./Apply";
+import Banner from "./Banner";
 const Bangladesh = () => {
   return (
     <ContentWrapper>
-      <Carousel />
+      <Banner />
       <Sns />
       <Youtube />
       <Detail />

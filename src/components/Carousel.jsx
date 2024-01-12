@@ -98,7 +98,7 @@ const Caroussel = ({ props }) => {
 export default Caroussel;
 const CarouselMain = styled.div`
   display: flex;
-  height: 450px;
+  height: 600px;
   width: 100%;
 `;
 const CarouselWrapper = styled.div`
