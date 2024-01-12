@@ -7,11 +7,13 @@ import Card from "./Card";
 import Detail from "./Detail";
 import BlogsContent from "./Blogs";
 import Apply from "./Apply";
+import Banner2 from "./Banner2";
 
 const Srilnaka = () => {
   return (
     <>
       <Banner />
+      <Banner2 />
       <Divider />
       <Sns />
       <Detail />

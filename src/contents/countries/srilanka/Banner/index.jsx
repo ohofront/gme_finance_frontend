@@ -2,6 +2,8 @@ import RowBgWrapper6 from "components/RowBgWrapper6";
 import styled from "styled-components";
 import background from "assets/images/countries/myanmar/background.jpg";
 import Divider from "components/Divider";
+import Caroussel from "components/Carousel";
+import banner from "utils/Countries/Srilanka/banner";
 const Banner = () => {
   return (
     <MyanmarWrapper>
@@ -10,7 +12,7 @@ const Banner = () => {
         <MyanmarContainer>
           <MyanmarColumnInner>
             <MyanmarWpbWrapper>
-              <Divider height={100} />
+              <Caroussel props={banner} />
             </MyanmarWpbWrapper>
           </MyanmarColumnInner>
         </MyanmarContainer>
