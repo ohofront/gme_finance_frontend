@@ -33,9 +33,20 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
     body{
-        font-family: Poppins;
+        font-family: "Noto Sans KR", Poppins, -apple-system, "Segoe UI", sans-serif;
         font-size: 16px;
         font-weight: 400;
+        color: #3a4660;
+        background-color: #f3f6fb;
+        -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #0a1f44;
+        letter-spacing: -0.01em;
+    }
+    ::selection {
+        background: #0b3d91;
+        color: #fff;
     }
 
     button {

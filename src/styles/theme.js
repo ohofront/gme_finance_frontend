@@ -5,12 +5,14 @@ const size = {
 };
 
 const theme = {
-  mainColor: "#6ABD8C",
-  mainColorLight: "#CCDFB0",
-  backgroundColor: "WHITE",
-  darkGray: "#595959",
-  lightGray: "#939292",
-  superLightGray: "#F1F2F5",
+  mainColor: "#0B3D91",
+  mainColorDark: "#0A1F44",
+  mainColorLight: "#DCE6F7",
+  accentColor: "#C9A24B",
+  backgroundColor: "#FFFFFF",
+  darkGray: "#3A4660",
+  lightGray: "#7C879D",
+  superLightGray: "#F3F6FB",
 };
 
 export default theme;
