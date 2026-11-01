@@ -12,7 +12,7 @@ const ApplyButton = () => {
 };
 export default ApplyButton;
 const ButtonAWrapper = styled.a`
-  background-color: #930000 !important;
+  background-color: #0b3d91 !important;
   padding: 8px 14px;
   color: #fff;
   font-family: Poppins;

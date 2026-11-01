@@ -201,7 +201,7 @@ const BlogsPostContent = styled.div`
 const BlogsPostA = styled.a`
   position: relative;
   display: block;
-  color: #930000;
+  color: #0b3d91;
 `;
 const BlogsFeaturedImg = styled.span`
   line-height: 0;
@@ -241,7 +241,7 @@ const BlogFilter = styled.a`
   line-height: 20px;
   margin-bottom: 10px;
   &:hover {
-    background-color: #930000 !important;
+    background-color: #0b3d91 !important;
     border: none;
   }
 `;

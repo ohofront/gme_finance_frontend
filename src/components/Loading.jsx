@@ -13,7 +13,7 @@ const Loading = () => {
         }}
       >
         <CircleLoader
-          color="#d63636"
+          color="#0b3d91"
           height={15}
           width={5}
           radius={2}

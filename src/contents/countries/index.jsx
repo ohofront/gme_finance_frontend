@@ -76,7 +76,7 @@ const Countries = () => {
                             <ContentElement>
                               <ContentWbpWrapper>
                                 <p style={{ textAlign: "center" }}>
-                                  <a style={{ color: "#930000" }}>
+                                  <a style={{ color: "#0b3d91" }}>
                                     <strong>{item.country}</strong>
                                   </a>
                                 </p>
@@ -198,7 +198,7 @@ const ContentFlagHoverWrapper = styled.div`
 `;
 const ContentFlagImagLoaded = styled.a`
   text-decoration: none;
-  color: #930000;
+  color: #0b3d91;
   text-align: center;
 `;
 const ContentElement = styled.div`

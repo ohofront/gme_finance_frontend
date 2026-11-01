@@ -74,6 +74,6 @@ const PromotionContentElement = styled.div`
   margin-bottom: 0;
   padding-top: 30px !important;
   padding-bottom: 30px !important;
-  background-color: #dd3333 !important;
+  background-color: #0b3d91 !important;
   border-radius: 10px !important;
 `;

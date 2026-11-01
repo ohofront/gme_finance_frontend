@@ -218,7 +218,7 @@ const BlogsPostContent = styled.div`
 const BlogsPostA = styled.a`
   position: relative;
   display: block;
-  color: #930000;
+  color: #0b3d91;
 `;
 const BlogsFeaturedImg = styled.span`
   line-height: 0;

@@ -107,19 +107,19 @@ const IconWrapper = styled.div`
   text-align: center;
 `;
 const IconInner = styled.div`
-  border-color: #930000;
+  border-color: #0b3d91;
   font-size: 50px;
   padding: 20px;
   border-width: 2px;
   line-height: 0;
-  border: 2px solid #930000;
+  border: 2px solid #0b3d91;
   text-align: center;
   border-radius: 150px;
   position: relative;
   transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),
     border-color 0.45s cubic-bezier(0.25, 1, 0.33, 1);
   &:hover {
-    background-color: #930000;
+    background-color: #0b3d91;
   }
   &:hover {
     color: #fff !important;

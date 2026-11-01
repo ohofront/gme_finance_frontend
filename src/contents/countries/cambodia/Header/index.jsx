@@ -30,7 +30,7 @@ const Header = (props) => {
 export default Header;
 
 const Wrapper = styled.div`
-  background-color: #dd3333 !important;
+  background-color: #0b3d91 !important;
   border-radius: 20px !important;
   position: relative;
   margin-bottom: 25px;
