@@ -25,7 +25,7 @@ const Footer = () => {
     <FooterSection>
       <FooterContainerRow>
         <FooterRow>
-          <RowWrapper isColor={true} />
+          <RowWrapper isColor={true} bgColor="#0a1f44" />
           <FooterDarkLeft>
             <FooterContainer>
               <FooterColumnInner>
@@ -41,7 +41,7 @@ const Footer = () => {
                               <FooterContentWpbWrapper>
                                 <FooterContetElemtent>
                                   <FooterContentWpbWrapper>
-                                    <h2 style={{ lineHeight: 1.25 }}>
+                                    <h2 style={{ lineHeight: 1.25, color: "#ffffff" }}>
                                       <a>{item.name}</a>
                                     </h2>
                                   </FooterContentWpbWrapper>
@@ -136,7 +136,7 @@ const Footer = () => {
                           <FooterContentWpbWrapper>
                             <FooterContetElemtent>
                               <FooterContentWpbWrapper>
-                                <p style={{ color: "gray" }}>
+                                <p style={{ color: "#b8c4dc" }}>
                                   상호: 주식회사 지엠이대부
                                   <br />
                                   브랜드명: GME Loan
@@ -184,7 +184,7 @@ const Footer = () => {
                                     height: 30,
                                     width: 30,
                                     display: "inline-block",
-                                    color: "#c8c8c8",
+                                    color: "#c9a24b",
                                     wordSpacing: 1,
                                     position: "relative",
                                     textAlign: "center",
@@ -206,7 +206,7 @@ const Footer = () => {
                     <FooterContentWpbWrapper>
                       <p
                         style={{
-                          color: "darkgray",
+                          color: "#8e9cbc",
                           fontSize: 13,
                           paddingBottom: 27,
                         }}
@@ -217,7 +217,7 @@ const Footer = () => {
                       </p>
                       <p
                         style={{
-                          color: "darkgray",
+                          color: "#8e9cbc",
                           fontSize: 13,
                           paddingBottom: 27,
                         }}
@@ -236,7 +236,7 @@ const Footer = () => {
                       </p>
                       <p
                         style={{
-                          color: "gray",
+                          color: "#b8c4dc",
                           fontSize: 14,
                           paddingBottom: 27,
                         }}
@@ -248,14 +248,14 @@ const Footer = () => {
                       </p>
                       <p
                         style={{
-                          color: "red",
+                          color: "#ff8a8a",
                           fontSize: 14,
                           paddingBottom: 27,
                         }}
                       >
                         과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다.
                       </p>
-                      <p style={{ color: "darkgray", fontSize: 13 }}>
+                      <p style={{ color: "#8e9cbc", fontSize: 13 }}>
                         이자 외 별도로 중개수수료를 수취하는 일은 불법입니다.
                       </p>
                     </FooterContentWpbWrapper>
@@ -288,7 +288,8 @@ const Footer = () => {
 };
 export default Footer;
 const FooterSection = styled.div`
-  background-color: #fafbfc;
+  background-color: #0a1f44;
+  border-top: 4px solid #c9a24b;
   z-index: 11;
   position: relative;
 `;
@@ -408,7 +409,7 @@ const FooterDividerContent = styled.div`
   height: 1px;
   margin-bottom: 5px;
   margin: 35px px auto 35px auto;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.18);
 `;
 const FooterLogoContainer = styled.div`
   float: none;

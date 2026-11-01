@@ -14,7 +14,7 @@ const RowWrapper = (props) => {
         {background ? (
           <RowbgImage background={background} />
         ) : (
-          <Rowbg iscolor={iscolor} />
+          <Rowbg iscolor={iscolor} bgcolor={props.bgColor} />
         )}
       </InnerWrapper>
     </Wrapper>
@@ -60,5 +60,5 @@ const Rowbg = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-color: ${(props) => (props.iscolor ? "#f2f2f2" : "")};
+  background-color: ${(props) => (props.iscolor ? props.bgcolor || "#f2f2f2" : "")};
 `;
