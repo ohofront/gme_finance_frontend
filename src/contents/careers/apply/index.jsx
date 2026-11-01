@@ -10,23 +10,25 @@ const Apply = () => {
           <ApplyColumnInner>
             <ApplyWpbWrapper>
               <ApplyRawHtml>
-                <iframe
-                  id="1698858347652_8062762379775"
-                  src="https://form.123formbuilder.com/js-form-username-6283110.html?ref=https%3A%2F%2Fgmefinance.com%2Fcareers%2F&amp;_referrer_=https%3A%2F%2Fgmefinance.com%2F&amp;_embedType_=embed.js&amp;_iframeID_=1698858347652_8062762379775"
-                  frameborder="0"
-                  scrolling="no"
-                  style={{
-                    padding: 0,
-                    margin: 0,
-                    display: "block",
-                    width: "100%",
-                    backgroundColor: "transparent",
-                    overflow: "hidden",
-                    opacity: 1,
-                    visibility: "visible",
-                    height: "983.2px",
-                  }}
-                ></iframe>
+                <div style={{ overflow: "hidden" }}>
+                  <iframe
+                    id="1698858347652_8062762379775"
+                    src="https://form.123formbuilder.com/js-form-username-6283110.html?ref=https%3A%2F%2Fgmefinance.com%2Fcareers%2F&amp;_referrer_=https%3A%2F%2Fgmefinance.com%2F&amp;_embedType_=embed.js&amp;_iframeID_=1698858347652_8062762379775"
+                    frameborder="0"
+                    scrolling="no"
+                    style={{
+                      padding: 0,
+                      margin: "-58px 0 0 0",
+                      display: "block",
+                      width: "100%",
+                      backgroundColor: "transparent",
+                      overflow: "hidden",
+                      opacity: 1,
+                      visibility: "visible",
+                      height: "983.2px",
+                    }}
+                  ></iframe>
+                </div>
               </ApplyRawHtml>
             </ApplyWpbWrapper>
           </ApplyColumnInner>
