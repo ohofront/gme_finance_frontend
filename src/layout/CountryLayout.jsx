@@ -1,28 +1,10 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
-import Loading from "components/Loading";
-import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 
 const CountryLayout = (props) => {
-  const [loading, setLoading] = useState(false);
-  const api = async () => {
-    try {
-      setLoading(true);
-    } catch (e) {
-      setLoading(false);
-    }
-  };
-  useEffect(() => {
-    setTimeout(() => {
-      api();
-    }, 1000);
-  }, [loading]);
-
-  return loading === false ? (
-    <Loading />
-  ) : (
+  return (
     <>
       <Header />
       <AjaxContentWrapper>
