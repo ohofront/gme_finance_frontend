@@ -34,10 +34,12 @@ const HeaderOuter = styled.div`
   left: 0;
   position: fixed;
   z-index: 9999;
+  border-top: 4px solid #0a1f44;
+  backdrop-filter: blur(6px);
   overflow: visible;
   box-shadow: ${(props) =>
-    props.isscroll ? "0 3px 45px rgba(0,0,0,0.15)" : ""};
-  background-color: ${(props) => (props.isscroll ? "white" : "")};
+    props.isscroll ? "0 4px 24px rgba(10,31,68,0.15)" : "0 1px 0 rgba(10,31,68,0.08)"};
+  background-color: ${(props) => "rgba(255,255,255,0.98)"};
   transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
     opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
     margin 0.25s ease-out 0s;

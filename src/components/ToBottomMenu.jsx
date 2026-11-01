@@ -68,7 +68,7 @@ const SpanWrapper = styled.span`
   padding: 0;
   cursor: pointer;
   &:hover {
-    color: red !important;
-    border-bottom: solid 3px #ea2129;
+    color: #0b3d91 !important;
+    border-bottom: solid 3px #c9a24b;
   }
 `;

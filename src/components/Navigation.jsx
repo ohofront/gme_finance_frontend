@@ -88,24 +88,24 @@ const LiWrapper = styled.li`
 const AWrapper = styled.a`
   opacity: 1;
   cursor: pointer;
-  color: #191c1f !important;
+  color: #0a1f44 !important;
   will-change: opacity, color;
   transition: opacity 0.2s ease, color 0.2s ease;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: -1px;
   position: relative;
-  font-family: Open Sans;
-  font-size: 17px;
+  font-family: inherit;
+  font-size: 16px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 0 10px 0 10px;
   display: block;
 `;
 const SpanWrapper = styled.span`
-  color: #191c1f !important;
+  color: #0a1f44 !important;
   &:hover {
-    color: red !important;
-    border-bottom: solid 3px #ea2129;
+    color: #0b3d91 !important;
+    border-bottom: solid 3px #c9a24b;
   }
 `;
